@@ -51,12 +51,14 @@ except Exception as e:
 
 # --- Load Task Time Estimation Model ---
 try:
-    task_time_model = joblib.load("task_time_prediction.pkl")
+    task_time_pipeline = joblib.load("task_time_prediction.pkl")
     task_time_features = joblib.load("task_time_features.pkl")
     logging.info("Task time estimation model loaded successfully.")
+    logging.info(f"Expected features: {list(task_time_features)}")
 except Exception as e:
     logging.exception("Failed to load task time model.")
-    task_time_model = None
+    task_time_pipeline = None
+    task_time_features = None
 
 
 # --- MQTT Callbacks ---
@@ -142,14 +144,80 @@ def detect_anomalies_batch(batch):
     return alerts
 
 
-def predict_task_time(features):
-    if task_time_model:
-        input_df = pd.DataFrame([features])[task_time_features]
-        prediction = task_time_model.predict(input_df)
-        return float(prediction[0])
-    else:
+def predict_task_time(input_features):
+    """
+    Predict task completion time using the trained pipeline.
+
+    Args:
+        input_features (dict): Dictionary containing all required features
+
+    Returns:
+        float: Predicted task completion time in minutes
+    """
+    if not task_time_pipeline:
         logging.error("Task time model not loaded.")
         return None
+
+    try:
+        # Convert input to DataFrame
+        input_df = pd.DataFrame([input_features])
+
+        # Make prediction using the pipeline (handles preprocessing automatically)
+        prediction = task_time_pipeline.predict(input_df)
+
+        logging.info(f"Task time prediction: {prediction[0]:.2f} minutes")
+        return float(prediction[0])
+
+    except Exception as e:
+        logging.exception(f"Error in task time prediction: {str(e)}")
+        return None
+
+
+def validate_prediction_input(features):
+    """
+    Validate that all required features are present in the input.
+
+    Args:
+        features (dict): Input features dictionary
+
+    Returns:
+        tuple: (is_valid, error_message)
+    """
+    required_features = [
+        "Engine_Hours",
+        "Fuel_Used_L",
+        "Load_Cycles",
+        "Idling_Time_min",
+        "Seatbelt_Status",
+        "Safety_Alert",
+        "Operator_ID",
+        "Weather_Temp_C",
+        "Weather_Rainfall_mm",
+        "Weather_Wind_kmph",
+        "Terrain",
+        "Task_Type",
+    ]
+
+    missing_features = [f for f in required_features if f not in features]
+
+    if missing_features:
+        return False, f"Missing required features: {missing_features}"
+
+    # Validate categorical features
+    valid_terrains = ["Flat", "Muddy", "Rocky"]
+    valid_task_types = ["Digging", "Grading", "Loading", "Transport"]
+
+    if features.get("Terrain") not in valid_terrains:
+        logging.warning(
+            f"Unknown terrain '{features.get('Terrain')}' - will be handled as unknown category"
+        )
+
+    if features.get("Task_Type") not in valid_task_types:
+        logging.warning(
+            f"Unknown task type '{features.get('Task_Type')}' - will be handled as unknown category"
+        )
+
+    return True, None
 
 
 def convert_objectid(data):
@@ -180,14 +248,92 @@ def get_all():
 
 @app.route("/predict-task-time", methods=["POST"])
 def predict_task_time_api():
+    """
+    API endpoint for task time prediction.
+
+    Expected JSON input:
+    {
+        "Engine_Hours": 5.0,
+        "Fuel_Used_L": 45.0,
+        "Load_Cycles": 100,
+        "Idling_Time_min": 30,
+        "Seatbelt_Status": 1,
+        "Safety_Alert": 0,
+        "Operator_ID": 15,
+        "Weather_Temp_C": 25.0,
+        "Weather_Rainfall_mm": 10.0,
+        "Weather_Wind_kmph": 15.0,
+        "Terrain": "Rocky",
+        "Task_Type": "Loading"
+    }
+    """
     logging.info("POST /predict-task-time called")
+
     try:
+        # Get JSON data from request
+        if not request.json:
+            return jsonify({"error": "No JSON data provided"}), 400
+
         features = request.json
+        logging.info(f"Received features: {features}")
+
+        # Validate input
+        is_valid, error_message = validate_prediction_input(features)
+        if not is_valid:
+            return jsonify({"error": error_message}), 400
+
+        # Make prediction
         prediction = predict_task_time(features)
-        return jsonify({"estimated_time": prediction})
+
+        if prediction is None:
+            return jsonify({"error": "Prediction failed"}), 500
+
+        response = {
+            "estimated_time_minutes": round(prediction, 2),
+            "estimated_time_hours": round(prediction / 60, 2),
+            "input_features": features,
+        }
+
+        logging.info(f"Prediction response: {response}")
+        return jsonify(response)
+
     except Exception as e:
         logging.exception("Task time prediction failed.")
-        return jsonify({"error": "Prediction failed."}), 500
+        return jsonify({"error": f"Prediction failed: {str(e)}"}), 500
+
+
+@app.route("/model-info", methods=["GET"])
+def get_model_info():
+    """
+    Get information about the loaded models and expected features.
+    """
+    logging.info("GET /model-info called")
+
+    info = {
+        "task_time_model_loaded": task_time_pipeline is not None,
+        "anomaly_model_loaded": anomaly_model is not None,
+        "required_features": [
+            "Engine_Hours",
+            "Fuel_Used_L",
+            "Load_Cycles",
+            "Idling_Time_min",
+            "Seatbelt_Status",
+            "Safety_Alert",
+            "Operator_ID",
+            "Weather_Temp_C",
+            "Weather_Rainfall_mm",
+            "Weather_Wind_kmph",
+            "Terrain",
+            "Task_Type",
+        ],
+        "valid_terrains": ["Flat", "Muddy", "Rocky"],
+        "valid_task_types": ["Digging", "Grading", "Loading", "Transport"],
+    }
+
+    if task_time_features is not None:
+        info["processed_features"] = list(task_time_features)
+
+    return jsonify(info)
 
 
 # --- Start MQTT Client ---

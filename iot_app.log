@@ -3086,3 +3086,482 @@ Traceback (most recent call last):
     raise KeyError(f"None of [{key}] are in the [{axis_name}]")
 KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
 2025-07-18 09:53:44,264 - INFO - 127.0.0.1 - - [18/Jul/2025 09:53:44] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 10:09:32,206 - INFO - Connected to MQTT broker.
+2025-07-18 10:09:32,207 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:09:33,338 - INFO - Connected to MQTT broker.
+2025-07-18 10:09:33,338 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:37:28,660 - INFO - Connected to MQTT broker.
+2025-07-18 10:37:28,661 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:37:28,675 - INFO - Connected to MQTT broker.
+2025-07-18 10:37:28,675 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:38:24,915 - INFO - POST /predict-task-time called
+2025-07-18 10:38:24,916 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 10:38:24,917 - INFO - 127.0.0.1 - - [18/Jul/2025 10:38:24] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 10:43:47,075 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 10:43:48,391 - INFO -  * Restarting with stat
+2025-07-18 10:43:52,180 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:43:52,184 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:43:52,984 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:43:52,986 - INFO - Starting Flask app...
+2025-07-18 10:43:52,999 - WARNING -  * Debugger is active!
+2025-07-18 10:43:53,009 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 10:43:54,605 - INFO - Connected to MQTT broker.
+2025-07-18 10:43:54,605 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:44:24,160 - INFO - POST /predict-task-time called
+2025-07-18 10:44:24,161 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 10:44:24,168 - INFO - 127.0.0.1 - - [18/Jul/2025 10:44:24] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 10:46:52,227 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\simulation-2.py', reloading
+2025-07-18 10:46:53,256 - INFO -  * Restarting with stat
+2025-07-18 10:46:56,918 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:46:56,921 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:46:57,384 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:46:57,386 - INFO - Starting Flask app...
+2025-07-18 10:46:57,395 - WARNING -  * Debugger is active!
+2025-07-18 10:46:57,401 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 10:47:01,608 - INFO - Connected to MQTT broker.
+2025-07-18 10:47:01,609 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:47:03,228 - INFO - POST /predict-task-time called
+2025-07-18 10:47:03,229 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 10:47:03,233 - INFO - 127.0.0.1 - - [18/Jul/2025 10:47:03] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 10:48:57,217 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:48:57,221 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:48:57,699 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:48:57,701 - INFO - Starting Flask app...
+2025-07-18 10:48:57,716 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 10:48:57,716 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 10:48:57,718 - INFO -  * Restarting with stat
+2025-07-18 10:49:01,234 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:49:01,239 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:49:01,750 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:49:01,753 - INFO - Starting Flask app...
+2025-07-18 10:49:01,767 - WARNING -  * Debugger is active!
+2025-07-18 10:49:01,775 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 10:49:02,892 - ERROR - MQTT connection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 199, in start_mqtt
+    client.connect(MQTT_BROKER, 1883, 60)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\paho\mqtt\client.py", line 914, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\paho\mqtt\client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\paho\mqtt\client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 853, in create_connection
+    raise exceptions[0]
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 838, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+2025-07-18 10:49:05,400 - INFO - POST /predict-task-time called
+2025-07-18 10:49:05,402 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 10:49:05,406 - INFO - 127.0.0.1 - - [18/Jul/2025 10:49:05] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 10:49:07,557 - INFO - Connected to MQTT broker.
+2025-07-18 10:49:07,557 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:50:28,548 - INFO - Connected to MQTT broker.
+2025-07-18 10:50:28,548 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:53:26,295 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\train_model-2.py', reloading
+2025-07-18 10:53:27,446 - INFO -  * Restarting with stat
+2025-07-18 10:58:18,826 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:58:18,829 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:58:19,355 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:58:19,355 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 10:58:19,358 - INFO - Starting Flask app...
+2025-07-18 10:58:19,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 10:58:19,373 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 10:58:19,376 - INFO -  * Restarting with stat
+2025-07-18 10:58:22,983 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 10:58:22,987 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 10:58:23,078 - INFO - Connected to MQTT broker.
+2025-07-18 10:58:23,078 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:58:23,459 - INFO - Task time estimation model loaded successfully.
+2025-07-18 10:58:23,459 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 10:58:23,461 - INFO - Starting Flask app...
+2025-07-18 10:58:23,470 - WARNING -  * Debugger is active!
+2025-07-18 10:58:23,475 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 10:58:24,806 - INFO - Connected to MQTT broker.
+2025-07-18 10:58:24,807 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 10:58:31,103 - INFO - POST /predict-task-time called
+2025-07-18 10:58:31,104 - INFO - Received features: {'Engine_Hours': 1900, 'Fuel_Used_L': 74, 'Load_Cycles': 37, 'Idling_Time_min': 111, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 31, 'Weather_Temp_C': 29, 'Weather_Rainfall_mm': 4, 'Weather_Wind_kmph': 25, 'Terrain': 'Flat', 'Task_Type': 'Loading'}
+2025-07-18 10:58:31,111 - INFO - Task time prediction: 101.33 minutes
+2025-07-18 10:58:31,111 - INFO - Prediction response: {'estimated_time_minutes': 101.33, 'estimated_time_hours': 1.69, 'input_features': {'Engine_Hours': 1900, 'Fuel_Used_L': 74, 'Load_Cycles': 37, 'Idling_Time_min': 111, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 31, 'Weather_Temp_C': 29, 'Weather_Rainfall_mm': 4, 'Weather_Wind_kmph': 25, 'Terrain': 'Flat', 'Task_Type': 'Loading'}}
+2025-07-18 10:58:31,112 - INFO - 127.0.0.1 - - [18/Jul/2025 10:58:31] "POST /predict-task-time HTTP/1.1" 200 -
+2025-07-18 11:00:39,764 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:00:40,874 - INFO -  * Restarting with stat
+2025-07-18 11:00:44,959 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:00:44,964 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:00:45,593 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:00:45,594 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:00:45,596 - INFO - Starting Flask app...
+2025-07-18 11:00:45,607 - WARNING -  * Debugger is active!
+2025-07-18 11:00:45,614 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:00:48,058 - INFO - Connected to MQTT broker.
+2025-07-18 11:00:48,059 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 11:00:50,453 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:00:49.080992', 'operator_id': 'OP_009', 'location': 'Site_D', 'Fuel Used (L)': 27.6584721984092, 'Load Cycles': 116.21287561554178, 'Idling Time (min)': 99.49638876163533, 'Engine Hours': 6.352931432392431, 'temperature': 13.60873010112512, 'humidity': 48.85569510047077, 'vibration_level': 3.0503212287602635, 'oil_pressure': 41.4677583718748}
+2025-07-18 11:00:50,453 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:49.582636', 'operator_id': 'OP_009', 'location': 'Site_A', 'Fuel Used (L)': 22.90801300056614, 'Load Cycles': 170.33799380272364, 'Idling Time (min)': 132.0769668739505, 'Engine Hours': 8.545495788412783, 'temperature': 19.00869981176685, 'humidity': 58.92905613765555, 'vibration_level': 2.877587791503255, 'oil_pressure': 42.65198931343492}
+2025-07-18 11:00:50,454 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:00:50.083526', 'operator_id': 'OP_007', 'location': 'Site_D', 'Fuel Used (L)': 22.740811187520972, 'Load Cycles': 142.49980261051985, 'Idling Time (min)': 26.67431583521792, 'Engine Hours': 9.786322492925603, 'temperature': 24.31207568192895, 'humidity': 67.79501747167319, 'vibration_level': 4.946673150367424, 'oil_pressure': 26.272875512448415}
+2025-07-18 11:00:50,466 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:00:49.080992', 'operator_id': 'OP_009', 'location': 'Site_D', 'Fuel Used (L)': 27.6584721984092, 'Load Cycles': 116.21287561554178, 'Idling Time (min)': 99.49638876163533, 'Engine Hours': 6.352931432392431, 'temperature': 13.60873010112512, 'humidity': 48.85569510047077, 'vibration_level': 3.0503212287602635, 'oil_pressure': 41.4677583718748}
+2025-07-18 11:00:50,466 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:49.582636', 'operator_id': 'OP_009', 'location': 'Site_A', 'Fuel Used (L)': 22.90801300056614, 'Load Cycles': 170.33799380272364, 'Idling Time (min)': 132.0769668739505, 'Engine Hours': 8.545495788412783, 'temperature': 19.00869981176685, 'humidity': 58.92905613765555, 'vibration_level': 2.877587791503255, 'oil_pressure': 42.65198931343492}
+2025-07-18 11:00:50,467 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:00:50.083526', 'operator_id': 'OP_007', 'location': 'Site_D', 'Fuel Used (L)': 22.740811187520972, 'Load Cycles': 142.49980261051985, 'Idling Time (min)': 26.67431583521792, 'Engine Hours': 9.786322492925603, 'temperature': 24.31207568192895, 'humidity': 67.79501747167319, 'vibration_level': 4.946673150367424, 'oil_pressure': 26.272875512448415}
+2025-07-18 11:00:52,040 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:00:50.584061', 'operator_id': 'OP_009', 'location': 'Site_C', 'Fuel Used (L)': 25.5643703027499, 'Load Cycles': 137.01545347714443, 'Idling Time (min)': 32.143520742083304, 'Engine Hours': 5.941867174190224, 'temperature': 19.159552056710396, 'humidity': 48.686563684667384, 'vibration_level': 2.822566610285513, 'oil_pressure': 35.15432481719846}
+2025-07-18 11:00:52,040 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:00:51.085021', 'operator_id': 'OP_006', 'location': 'Site_B', 'Fuel Used (L)': 19.546818658245776, 'Load Cycles': 297.30346852923304, 'Idling Time (min)': 48.521060067592224, 'Engine Hours': 11.261374869560937, 'temperature': 21.22024831580639, 'humidity': 46.762432286902566, 'vibration_level': 2.5383521427037983, 'oil_pressure': 46.02553431838249}
+2025-07-18 11:00:52,041 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:51.585510', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 20.010946477768957, 'Load Cycles': 162.14464286395557, 'Idling Time (min)': 55.234492816760564, 'Engine Hours': 6.842495071715807, 'temperature': 21.674455396612057, 'humidity': 71.47666073349254, 'vibration_level': 2.2290337209992277, 'oil_pressure': 35.21645163137572}
+2025-07-18 11:00:52,124 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:00:50.584061', 'operator_id': 'OP_009', 'location': 'Site_C', 'Fuel Used (L)': 25.5643703027499, 'Load Cycles': 137.01545347714443, 'Idling Time (min)': 32.143520742083304, 'Engine Hours': 5.941867174190224, 'temperature': 19.159552056710396, 'humidity': 48.686563684667384, 'vibration_level': 2.822566610285513, 'oil_pressure': 35.15432481719846}
+2025-07-18 11:00:52,125 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:00:51.085021', 'operator_id': 'OP_006', 'location': 'Site_B', 'Fuel Used (L)': 19.546818658245776, 'Load Cycles': 297.30346852923304, 'Idling Time (min)': 48.521060067592224, 'Engine Hours': 11.261374869560937, 'temperature': 21.22024831580639, 'humidity': 46.762432286902566, 'vibration_level': 2.5383521427037983, 'oil_pressure': 46.02553431838249}
+2025-07-18 11:00:52,125 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:51.585510', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 20.010946477768957, 'Load Cycles': 162.14464286395557, 'Idling Time (min)': 55.234492816760564, 'Engine Hours': 6.842495071715807, 'temperature': 21.674455396612057, 'humidity': 71.47666073349254, 'vibration_level': 2.2290337209992277, 'oil_pressure': 35.21645163137572}
+2025-07-18 11:00:53,364 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:00:52.086300', 'operator_id': 'OP_010', 'location': 'Site_C', 'Fuel Used (L)': 26.964430820341562, 'Load Cycles': 197.86359757486105, 'Idling Time (min)': 105.20454643862834, 'Engine Hours': 5.168752419696393, 'temperature': 21.55255064001606, 'humidity': 62.75206740376768, 'vibration_level': 1.3774107228282257, 'oil_pressure': 33.61945979156463}
+2025-07-18 11:00:53,365 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:52.588257', 'operator_id': 'OP_009', 'location': 'Site_B', 'Fuel Used (L)': 21.552315010932112, 'Load Cycles': 157.14576181852271, 'Idling Time (min)': 35.49440818107367, 'Engine Hours': 1.197331473707739, 'temperature': 21.767920969991103, 'humidity': 61.79296252172857, 'vibration_level': 3.187206901184096, 'oil_pressure': 38.84992739748461}
+2025-07-18 11:00:53,365 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:52.588257', 'operator_id': 'OP_009', 'location': 'Site_B', 'Fuel Used (L)': 21.552315010932112, 'Load Cycles': 157.14576181852271, 'Idling Time (min)': 35.49440818107367, 'Engine Hours': 1.197331473707739, 'temperature': 21.767920969991103, 'humidity': 61.79296252172857, 'vibration_level': 3.187206901184096, 'oil_pressure': 38.84992739748461}
+2025-07-18 11:00:54,225 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:00:53.088871', 'operator_id': 'OP_003', 'location': 'Site_B', 'Fuel Used (L)': 30.393460950699996, 'Load Cycles': 124.11333595395978, 'Idling Time (min)': 41.91033594405216, 'Engine Hours': 12.79911237275054, 'temperature': 22.623788577456203, 'humidity': 45.139586771296905, 'vibration_level': 2.0843332743747878, 'oil_pressure': 30.79108441437407}
+2025-07-18 11:00:54,225 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:00:53.088871', 'operator_id': 'OP_003', 'location': 'Site_B', 'Fuel Used (L)': 30.393460950699996, 'Load Cycles': 124.11333595395978, 'Idling Time (min)': 41.91033594405216, 'Engine Hours': 12.79911237275054, 'temperature': 22.623788577456203, 'humidity': 45.139586771296905, 'vibration_level': 2.0843332743747878, 'oil_pressure': 30.79108441437407}
+2025-07-18 11:00:54,225 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:53.589540', 'operator_id': 'OP_004', 'location': 'Site_B', 'Fuel Used (L)': 44.871594684447736, 'Load Cycles': 172.87310285450454, 'Idling Time (min)': 48.30413430539153, 'Engine Hours': 7.285905018493026, 'temperature': 26.446484552888222, 'humidity': 50.90349184593898, 'vibration_level': 2.058045233863534, 'oil_pressure': 34.754903726119224}
+2025-07-18 11:00:54,226 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:00:53.589540', 'operator_id': 'OP_004', 'location': 'Site_B', 'Fuel Used (L)': 44.871594684447736, 'Load Cycles': 172.87310285450454, 'Idling Time (min)': 48.30413430539153, 'Engine Hours': 7.285905018493026, 'temperature': 26.446484552888222, 'humidity': 50.90349184593898, 'vibration_level': 2.058045233863534, 'oil_pressure': 34.754903726119224}
+2025-07-18 11:00:55,629 - INFO - Inserted batch of 10 logs into MongoDB.
+2025-07-18 11:00:59,369 - INFO - Inserted batch of 10 logs into MongoDB.
+2025-07-18 11:02:30,010 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:02:31,385 - INFO -  * Restarting with stat
+2025-07-18 11:02:35,628 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:02:35,632 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:02:36,168 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:02:36,168 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:02:36,171 - INFO - Starting Flask app...
+2025-07-18 11:02:36,184 - WARNING -  * Debugger is active!
+2025-07-18 11:02:36,201 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:02:37,487 - INFO - Connected to MQTT broker.
+2025-07-18 11:02:37,488 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 11:02:37,490 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:02:38,284 - INFO -  * Restarting with stat
+2025-07-18 11:02:42,508 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:02:42,512 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:02:43,036 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:02:43,036 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:02:43,038 - INFO - Starting Flask app...
+2025-07-18 11:02:43,047 - WARNING -  * Debugger is active!
+2025-07-18 11:02:43,052 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:02:44,294 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:02:45,206 - INFO -  * Restarting with stat
+2025-07-18 11:02:50,136 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:02:50,144 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:02:51,205 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:02:51,205 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:02:51,209 - INFO - Starting Flask app...
+2025-07-18 11:02:51,220 - WARNING -  * Debugger is active!
+2025-07-18 11:02:51,227 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:02:52,524 - INFO - Connected to MQTT broker.
+2025-07-18 11:02:52,524 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 11:02:54,980 - INFO - GET /latest called
+2025-07-18 11:02:54,981 - INFO - 127.0.0.1 - - [18/Jul/2025 11:02:54] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:02:54,983 - INFO - GET /all called
+2025-07-18 11:02:55,014 - INFO - 127.0.0.1 - - [18/Jul/2025 11:02:55] "GET /all HTTP/1.1" 200 -
+2025-07-18 11:02:59,675 - INFO - GET /latest called
+2025-07-18 11:02:59,675 - INFO - 127.0.0.1 - - [18/Jul/2025 11:02:59] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:04,987 - INFO - GET /latest called
+2025-07-18 11:03:04,987 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:04] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:09,678 - INFO - GET /latest called
+2025-07-18 11:03:09,678 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:09] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:11,195 - INFO - GET /model-info called
+2025-07-18 11:03:11,195 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:11] "GET /model-info HTTP/1.1" 200 -
+2025-07-18 11:03:11,439 - INFO - GET /model-info called
+2025-07-18 11:03:11,439 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:11] "GET /model-info HTTP/1.1" 200 -
+2025-07-18 11:03:14,676 - INFO - GET /latest called
+2025-07-18 11:03:14,676 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:14] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:19,983 - INFO - GET /latest called
+2025-07-18 11:03:19,983 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:19] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:24,677 - INFO - GET /latest called
+2025-07-18 11:03:24,677 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:24] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:29,982 - INFO - GET /latest called
+2025-07-18 11:03:29,983 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:29] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:35,203 - INFO - GET /latest called
+2025-07-18 11:03:35,204 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:35] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:39,977 - INFO - GET /latest called
+2025-07-18 11:03:39,978 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:39] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:44,675 - INFO - GET /latest called
+2025-07-18 11:03:44,676 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:44] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:49,977 - INFO - GET /latest called
+2025-07-18 11:03:49,977 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:49] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:03:50,784 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:50] "OPTIONS /predict-task-time HTTP/1.1" 200 -
+2025-07-18 11:03:51,101 - INFO - POST /predict-task-time called
+2025-07-18 11:03:51,101 - INFO - Received features: {'Engine_Hours': 0.6, 'Fuel_Used_L': 20, 'Load_Cycles': 1, 'Idling_Time_min': 20, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 1, 'Weather_Temp_C': 25, 'Weather_Rainfall_mm': 0, 'Weather_Wind_kmph': 10, 'Terrain': 'Flat', 'Task_Type': 'Digging'}
+2025-07-18 11:03:51,107 - INFO - Task time prediction: 66.51 minutes
+2025-07-18 11:03:51,108 - INFO - Prediction response: {'estimated_time_minutes': 66.51, 'estimated_time_hours': 1.11, 'input_features': {'Engine_Hours': 0.6, 'Fuel_Used_L': 20, 'Load_Cycles': 1, 'Idling_Time_min': 20, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 1, 'Weather_Temp_C': 25, 'Weather_Rainfall_mm': 0, 'Weather_Wind_kmph': 10, 'Terrain': 'Flat', 'Task_Type': 'Digging'}}
+2025-07-18 11:03:51,108 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:51] "POST /predict-task-time HTTP/1.1" 200 -
+2025-07-18 11:03:54,671 - INFO - GET /latest called
+2025-07-18 11:03:54,671 - INFO - 127.0.0.1 - - [18/Jul/2025 11:03:54] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:00,503 - INFO - GET /latest called
+2025-07-18 11:04:00,504 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:00] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:04,674 - INFO - GET /latest called
+2025-07-18 11:04:04,675 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:04] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:09,985 - INFO - GET /latest called
+2025-07-18 11:04:09,985 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:09] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:15,199 - INFO - GET /latest called
+2025-07-18 11:04:15,200 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:15] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:19,975 - INFO - GET /latest called
+2025-07-18 11:04:19,976 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:19] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:24,676 - INFO - GET /latest called
+2025-07-18 11:04:24,677 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:24] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:29,984 - INFO - GET /latest called
+2025-07-18 11:04:29,984 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:29] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:35,206 - INFO - GET /latest called
+2025-07-18 11:04:35,207 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:35] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:40,502 - INFO - GET /latest called
+2025-07-18 11:04:40,502 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:40] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:45,195 - INFO - GET /latest called
+2025-07-18 11:04:45,196 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:45] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:50,502 - INFO - GET /latest called
+2025-07-18 11:04:50,502 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:50] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:04:54,503 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:04:55,274 - INFO -  * Restarting with stat
+2025-07-18 11:04:59,176 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:04:59,179 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:04:59,689 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:04:59,690 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:04:59,693 - INFO - Starting Flask app...
+2025-07-18 11:04:59,703 - WARNING -  * Debugger is active!
+2025-07-18 11:04:59,710 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:04:59,820 - INFO - GET /latest called
+2025-07-18 11:04:59,821 - INFO - 127.0.0.1 - - [18/Jul/2025 11:04:59] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:00,205 - INFO - GET /latest called
+2025-07-18 11:05:00,206 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:00] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:02,880 - INFO - Connected to MQTT broker.
+2025-07-18 11:05:02,881 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 11:05:05,501 - INFO - GET /latest called
+2025-07-18 11:05:05,501 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:05] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:07,474 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:05:08,399 - INFO -  * Restarting with stat
+2025-07-18 11:05:12,090 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:05:12,095 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:05:12,620 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:05:12,620 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:05:12,623 - INFO - Starting Flask app...
+2025-07-18 11:05:12,632 - WARNING -  * Debugger is active!
+2025-07-18 11:05:12,639 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:05:12,749 - INFO - GET /latest called
+2025-07-18 11:05:12,750 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:12] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:13,901 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 11:05:14,713 - INFO -  * Restarting with stat
+2025-07-18 11:05:18,257 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 11:05:18,261 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 11:05:18,751 - INFO - Task time estimation model loaded successfully.
+2025-07-18 11:05:18,751 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 11:05:18,754 - INFO - Starting Flask app...
+2025-07-18 11:05:18,762 - WARNING -  * Debugger is active!
+2025-07-18 11:05:18,768 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 11:05:18,871 - INFO - GET /latest called
+2025-07-18 11:05:18,871 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:18] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:20,201 - INFO - GET /latest called
+2025-07-18 11:05:20,201 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:20] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:20,787 - INFO - Connected to MQTT broker.
+2025-07-18 11:05:20,788 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 11:05:25,498 - INFO - GET /latest called
+2025-07-18 11:05:25,499 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:25] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:30,193 - INFO - GET /latest called
+2025-07-18 11:05:30,194 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:30] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:35,239 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:33.915168', 'operator_id': 'OP_005', 'location': 'Site_D', 'Fuel Used (L)': 44.21063225626975, 'Load Cycles': 300.4260997443915, 'Idling Time (min)': 78.81996816314621, 'Engine Hours': 14.398971867211191, 'temperature': 23.116712529664394, 'humidity': 51.55931001513402, 'vibration_level': 2.5692440849828655, 'oil_pressure': 31.852117882769488}
+2025-07-18 11:05:37,951 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:05:36.916027', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 26.714960738570394, 'Load Cycles': 143.83512620587766, 'Idling Time (min)': 53.88003313436027, 'Engine Hours': 8.43569654165894, 'temperature': 27.1167431120496, 'humidity': 71.44259169590175, 'vibration_level': 2.683160162268132, 'oil_pressure': 31.88357991799609}
+2025-07-18 11:05:37,968 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:05:36.916027', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 26.714960738570394, 'Load Cycles': 143.83512620587766, 'Idling Time (min)': 53.88003313436027, 'Engine Hours': 8.43569654165894, 'temperature': 27.1167431120496, 'humidity': 71.44259169590175, 'vibration_level': 2.683160162268132, 'oil_pressure': 31.88357991799609}
+2025-07-18 11:05:38,593 - INFO - GET /latest called
+2025-07-18 11:05:38,594 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:38] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:38,777 - INFO - Inserted batch of 2 logs into MongoDB.
+2025-07-18 11:05:39,671 - INFO - GET /latest called
+2025-07-18 11:05:39,672 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:39] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:40,560 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:39.916694', 'operator_id': 'OP_008', 'location': 'Site_C', 'Fuel Used (L)': 21.375246821964055, 'Load Cycles': 124.98044256897205, 'Idling Time (min)': 38.66037553414581, 'Engine Hours': 7.261535739088275, 'temperature': 18.60713460311725, 'humidity': 46.48796988406206, 'vibration_level': 3.3311517871710987, 'oil_pressure': 40.467276226461784}
+2025-07-18 11:05:40,578 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:39.916694', 'operator_id': 'OP_008', 'location': 'Site_C', 'Fuel Used (L)': 21.375246821964055, 'Load Cycles': 124.98044256897205, 'Idling Time (min)': 38.66037553414581, 'Engine Hours': 7.261535739088275, 'temperature': 18.60713460311725, 'humidity': 46.48796988406206, 'vibration_level': 3.3311517871710987, 'oil_pressure': 40.467276226461784}
+2025-07-18 11:05:42,761 - INFO - Inserted batch of 3 logs into MongoDB.
+2025-07-18 11:05:43,563 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:05:42.917496', 'operator_id': 'OP_008', 'location': 'Site_A', 'Fuel Used (L)': 27.100359238732548, 'Load Cycles': 117.03755643387188, 'Idling Time (min)': 50.70314529494955, 'Engine Hours': 6.516937072965846, 'temperature': 20.874127182747067, 'humidity': 53.990352815718666, 'vibration_level': 3.851616650874184, 'oil_pressure': 32.83022979493089}
+2025-07-18 11:05:43,572 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:05:42.917496', 'operator_id': 'OP_008', 'location': 'Site_A', 'Fuel Used (L)': 27.100359238732548, 'Load Cycles': 117.03755643387188, 'Idling Time (min)': 50.70314529494955, 'Engine Hours': 6.516937072965846, 'temperature': 20.874127182747067, 'humidity': 53.990352815718666, 'vibration_level': 3.851616650874184, 'oil_pressure': 32.83022979493089}
+2025-07-18 11:05:44,976 - INFO - GET /latest called
+2025-07-18 11:05:44,977 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:44] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:46,660 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:05:45.918144', 'operator_id': 'OP_003', 'location': 'Site_A', 'Fuel Used (L)': 26.461121433662935, 'Load Cycles': 128.58472968865803, 'Idling Time (min)': 35.22492736724752, 'Engine Hours': 16.697061451656598, 'temperature': 33.201319634016635, 'humidity': 54.054608611841736, 'vibration_level': 3.5921016703622906, 'oil_pressure': 40.13438207327259}
+2025-07-18 11:05:46,678 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:05:45.918144', 'operator_id': 'OP_003', 'location': 'Site_A', 'Fuel Used (L)': 26.461121433662935, 'Load Cycles': 128.58472968865803, 'Idling Time (min)': 35.22492736724752, 'Engine Hours': 16.697061451656598, 'temperature': 33.201319634016635, 'humidity': 54.054608611841736, 'vibration_level': 3.5921016703622906, 'oil_pressure': 40.13438207327259}
+2025-07-18 11:05:49,438 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:48.918834', 'operator_id': 'OP_007', 'location': 'Site_C', 'Fuel Used (L)': 32.37402755618179, 'Load Cycles': 146.58403840023524, 'Idling Time (min)': 36.73082565621863, 'Engine Hours': 6.021801485323227, 'temperature': 23.983653343880786, 'humidity': 63.468342713003594, 'vibration_level': 1.411760666706537, 'oil_pressure': 36.575649223684415}
+2025-07-18 11:05:49,672 - INFO - GET /latest called
+2025-07-18 11:05:49,673 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:49] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:49,678 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:05:51,605 - INFO - GET /latest called
+2025-07-18 11:05:51,605 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:51] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:51,606 - INFO - GET /all called
+2025-07-18 11:05:51,610 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:51] "GET /all HTTP/1.1" 200 -
+2025-07-18 11:05:52,843 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:51.919672', 'operator_id': 'OP_006', 'location': 'Site_A', 'Fuel Used (L)': 14.146951239264409, 'Load Cycles': 172.9743130130276, 'Idling Time (min)': 53.38622593919705, 'Engine Hours': 6.508381889886303, 'temperature': 25.977926534513784, 'humidity': 58.8043227106401, 'vibration_level': 2.68723320615916, 'oil_pressure': 41.55684320730186}
+2025-07-18 11:05:53,853 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:05:55,426 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:54.920395', 'operator_id': 'OP_002', 'location': 'Site_D', 'Fuel Used (L)': 24.656240806007737, 'Load Cycles': 155.30804144546065, 'Idling Time (min)': 56.36717871595465, 'Engine Hours': 8.869512431407925, 'temperature': 24.47278385400309, 'humidity': 47.18977880635747, 'vibration_level': 2.3043186531510718, 'oil_pressure': 32.320948864167725}
+2025-07-18 11:05:55,443 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:54.920395', 'operator_id': 'OP_002', 'location': 'Site_D', 'Fuel Used (L)': 24.656240806007737, 'Load Cycles': 155.30804144546065, 'Idling Time (min)': 56.36717871595465, 'Engine Hours': 8.869512431407925, 'temperature': 24.47278385400309, 'humidity': 47.18977880635747, 'vibration_level': 2.3043186531510718, 'oil_pressure': 32.320948864167725}
+2025-07-18 11:05:56,302 - INFO - GET /latest called
+2025-07-18 11:05:56,302 - INFO - 127.0.0.1 - - [18/Jul/2025 11:05:56] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:05:58,614 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:57.921205', 'operator_id': 'OP_005', 'location': 'Site_A', 'Fuel Used (L)': 21.65251217538324, 'Load Cycles': 112.15335385145299, 'Idling Time (min)': 51.486360811346785, 'Engine Hours': 9.021552622137895, 'temperature': 21.187401520907496, 'humidity': 47.486179234229645, 'vibration_level': 2.9406283742999997, 'oil_pressure': 39.17925247892367}
+2025-07-18 11:05:58,632 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:05:57.921205', 'operator_id': 'OP_005', 'location': 'Site_A', 'Fuel Used (L)': 21.65251217538324, 'Load Cycles': 112.15335385145299, 'Idling Time (min)': 51.486360811346785, 'Engine Hours': 9.021552622137895, 'temperature': 21.187401520907496, 'humidity': 47.486179234229645, 'vibration_level': 2.9406283742999997, 'oil_pressure': 39.17925247892367}
+2025-07-18 11:06:01,359 - INFO - Inserted batch of 3 logs into MongoDB.
+2025-07-18 11:06:02,158 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:00.921833', 'operator_id': 'OP_009', 'location': 'Site_B', 'Fuel Used (L)': 21.963279497306093, 'Load Cycles': 175.16097017558258, 'Idling Time (min)': 41.54374686021702, 'Engine Hours': 12.535848451153509, 'temperature': 34.95023994082463, 'humidity': 78.94368115463631, 'vibration_level': 2.3224442972772543, 'oil_pressure': 43.44700490578049}
+2025-07-18 11:06:02,517 - INFO - GET /latest called
+2025-07-18 11:06:02,517 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:02] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:05,071 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:03.922616', 'operator_id': 'OP_009', 'location': 'Site_A', 'Fuel Used (L)': 28.613373104596, 'Load Cycles': 163.66277315873873, 'Idling Time (min)': 57.48737840055091, 'Engine Hours': 6.978023944246726, 'temperature': 23.717065161317404, 'humidity': 51.80807450841722, 'vibration_level': 2.580000575177326, 'oil_pressure': 40.62404243344066}
+2025-07-18 11:06:05,411 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:07,201 - INFO - GET /latest called
+2025-07-18 11:06:07,201 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:07] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:08,186 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:06.923370', 'operator_id': 'OP_010', 'location': 'Site_C', 'Fuel Used (L)': 31.837427181699884, 'Load Cycles': 157.01503530618953, 'Idling Time (min)': 44.04791070121472, 'Engine Hours': 7.905769062982921, 'temperature': 9.70772462378537, 'humidity': 53.02321574363683, 'vibration_level': 2.0297683680599854, 'oil_pressure': 32.09491383406368}
+2025-07-18 11:06:08,186 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:06.923370', 'operator_id': 'OP_010', 'location': 'Site_C', 'Fuel Used (L)': 31.837427181699884, 'Load Cycles': 157.01503530618953, 'Idling Time (min)': 44.04791070121472, 'Engine Hours': 7.905769062982921, 'temperature': 9.70772462378537, 'humidity': 53.02321574363683, 'vibration_level': 2.0297683680599854, 'oil_pressure': 32.09491383406368}
+2025-07-18 11:06:10,669 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:09.924125', 'operator_id': 'OP_009', 'location': 'Site_D', 'Fuel Used (L)': 18.139624131092987, 'Load Cycles': 78.09117862904492, 'Idling Time (min)': 51.37790023294779, 'Engine Hours': 12.71770507593707, 'temperature': 24.75929291767926, 'humidity': 51.58745737611124, 'vibration_level': 4.252848090936389, 'oil_pressure': 34.63618877099945}
+2025-07-18 11:06:12,412 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:12,507 - INFO - GET /latest called
+2025-07-18 11:06:12,507 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:12] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:13,604 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:12.924783', 'operator_id': 'OP_007', 'location': 'Site_D', 'Fuel Used (L)': 36.679915886119815, 'Load Cycles': 100.9972640363589, 'Idling Time (min)': 53.68632085842365, 'Engine Hours': 8.624841353748565, 'temperature': 17.11102566683058, 'humidity': 72.7577798400917, 'vibration_level': 3.026659886136556, 'oil_pressure': 46.3536466886013}
+2025-07-18 11:06:16,294 - INFO - GET /latest called
+2025-07-18 11:06:16,294 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:16] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:16,569 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:15.925418', 'operator_id': 'OP_003', 'location': 'Site_A', 'Fuel Used (L)': 40.58683774759558, 'Load Cycles': 100.31588327145462, 'Idling Time (min)': 41.70041801766013, 'Engine Hours': 10.325940978020228, 'temperature': 19.00639740757598, 'humidity': 52.611177063377795, 'vibration_level': 3.309956187718573, 'oil_pressure': 33.82179215768655}
+2025-07-18 11:06:16,602 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:15.925418', 'operator_id': 'OP_003', 'location': 'Site_A', 'Fuel Used (L)': 40.58683774759558, 'Load Cycles': 100.31588327145462, 'Idling Time (min)': 41.70041801766013, 'Engine Hours': 10.325940978020228, 'temperature': 19.00639740757598, 'humidity': 52.611177063377795, 'vibration_level': 3.309956187718573, 'oil_pressure': 33.82179215768655}
+2025-07-18 11:06:17,157 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:19,722 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:06:18.926197', 'operator_id': 'OP_010', 'location': 'Site_A', 'Fuel Used (L)': 24.326256235135, 'Load Cycles': 325.1821133656048, 'Idling Time (min)': 47.34189054549745, 'Engine Hours': 8.014740290615503, 'temperature': 25.471030030158204, 'humidity': 57.03676915861672, 'vibration_level': 2.349799749725315, 'oil_pressure': 36.40395973688038}
+2025-07-18 11:06:21,610 - INFO - GET /latest called
+2025-07-18 11:06:21,611 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:21] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:22,981 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:06:21.927304', 'operator_id': 'OP_010', 'location': 'Site_B', 'Fuel Used (L)': 31.98713131476309, 'Load Cycles': 163.7121739793426, 'Idling Time (min)': 35.43029613695688, 'Engine Hours': 8.150464133667667, 'temperature': 19.84115577085784, 'humidity': 58.9593662937983, 'vibration_level': 1.5008346941850732, 'oil_pressure': 42.787382630024844}
+2025-07-18 11:06:23,888 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:25,787 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:24.928040', 'operator_id': 'OP_007', 'location': 'Site_C', 'Fuel Used (L)': 34.03607915494002, 'Load Cycles': 93.41268273379471, 'Idling Time (min)': 61.93219005169187, 'Engine Hours': 8.816829797704782, 'temperature': 16.084143929852047, 'humidity': 74.74310718303259, 'vibration_level': 1.779303030532666, 'oil_pressure': 32.7542795924148}
+2025-07-18 11:06:26,295 - INFO - GET /latest called
+2025-07-18 11:06:26,295 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:26] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:28,932 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:06:27.928553', 'operator_id': 'OP_008', 'location': 'Site_C', 'Fuel Used (L)': 36.567146074012776, 'Load Cycles': 126.2166271726031, 'Idling Time (min)': 43.403603140555894, 'Engine Hours': 8.993054868971539, 'temperature': 24.80659424480912, 'humidity': 48.87082943067566, 'vibration_level': 3.6211031707984502, 'oil_pressure': 37.35058634816277}
+2025-07-18 11:06:28,939 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:06:27.928553', 'operator_id': 'OP_008', 'location': 'Site_C', 'Fuel Used (L)': 36.567146074012776, 'Load Cycles': 126.2166271726031, 'Idling Time (min)': 43.403603140555894, 'Engine Hours': 8.993054868971539, 'temperature': 24.80659424480912, 'humidity': 48.87082943067566, 'vibration_level': 3.6211031707984502, 'oil_pressure': 37.35058634816277}
+2025-07-18 11:06:29,505 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:31,604 - INFO - GET /latest called
+2025-07-18 11:06:31,604 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:31] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:32,626 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:06:30.929337', 'operator_id': 'OP_007', 'location': 'Site_C', 'Fuel Used (L)': 16.834192591620056, 'Load Cycles': 83.01724886494596, 'Idling Time (min)': 33.68570373781281, 'Engine Hours': 5.503230337937413, 'temperature': 19.050675863428523, 'humidity': 43.44114033206065, 'vibration_level': 2.973299358310112, 'oil_pressure': 43.69249339245913}
+2025-07-18 11:06:35,100 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:33.929947', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 23.305149045067182, 'Load Cycles': 176.6844522314143, 'Idling Time (min)': 49.93628807137861, 'Engine Hours': 9.10269751843584, 'temperature': 19.46284142210907, 'humidity': 51.950760498237955, 'vibration_level': 4.65787461681735, 'oil_pressure': 24.093420737281313}
+2025-07-18 11:06:35,321 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:36,299 - INFO - GET /latest called
+2025-07-18 11:06:36,300 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:36] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:37,712 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:36.930614', 'operator_id': 'OP_003', 'location': 'Site_B', 'Fuel Used (L)': 28.32388968851058, 'Load Cycles': 199.4492403195045, 'Idling Time (min)': 51.459368987574976, 'Engine Hours': 8.488371182970404, 'temperature': 16.873458086223533, 'humidity': 64.43741776901656, 'vibration_level': 3.636674559793464, 'oil_pressure': 42.99274662070937}
+2025-07-18 11:06:40,800 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:06:39.931175', 'operator_id': 'OP_009', 'location': 'Site_D', 'Fuel Used (L)': 19.257116286376323, 'Load Cycles': 153.27048659631936, 'Idling Time (min)': 49.844053115372546, 'Engine Hours': 10.284157359743238, 'temperature': 31.392475858861204, 'humidity': 55.65244616345391, 'vibration_level': 3.4054234095311315, 'oil_pressure': 25.352670719953718}
+2025-07-18 11:06:40,801 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:06:39.931175', 'operator_id': 'OP_009', 'location': 'Site_D', 'Fuel Used (L)': 19.257116286376323, 'Load Cycles': 153.27048659631936, 'Idling Time (min)': 49.844053115372546, 'Engine Hours': 10.284157359743238, 'temperature': 31.392475858861204, 'humidity': 55.65244616345391, 'vibration_level': 3.4054234095311315, 'oil_pressure': 25.352670719953718}
+2025-07-18 11:06:41,133 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:41,603 - INFO - GET /latest called
+2025-07-18 11:06:41,603 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:41] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:43,731 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:42.932131', 'operator_id': 'OP_005', 'location': 'Site_D', 'Fuel Used (L)': 30.70999717456885, 'Load Cycles': 172.04372200681993, 'Idling Time (min)': 131.13788949138944, 'Engine Hours': 6.2927352839083674, 'temperature': 31.63321693995669, 'humidity': 63.012286582407285, 'vibration_level': 2.9300938422121305, 'oil_pressure': 35.899242881460935}
+2025-07-18 11:06:46,304 - INFO - GET /latest called
+2025-07-18 11:06:46,304 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:46] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:46,935 - INFO - Inserted batch of 3 logs into MongoDB.
+2025-07-18 11:06:47,019 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:45.933124', 'operator_id': 'OP_005', 'location': 'Site_C', 'Fuel Used (L)': 27.641535670941288, 'Load Cycles': 205.20216076542738, 'Idling Time (min)': 63.659566830025554, 'Engine Hours': 8.75896240825744, 'temperature': 30.004859787896663, 'humidity': 50.88794581654402, 'vibration_level': 3.9395496081100707, 'oil_pressure': 39.830821086683414}
+2025-07-18 11:06:50,911 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:48.934322', 'operator_id': 'OP_006', 'location': 'Site_A', 'Fuel Used (L)': 27.91921908655616, 'Load Cycles': 125.66322180844625, 'Idling Time (min)': 55.10761766890393, 'Engine Hours': 6.170746227132455, 'temperature': 16.573090875082684, 'humidity': 47.331301355744266, 'vibration_level': 2.9509771710601034, 'oil_pressure': 38.33669393077834}
+2025-07-18 11:06:51,226 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:48.934322', 'operator_id': 'OP_006', 'location': 'Site_A', 'Fuel Used (L)': 27.91921908655616, 'Load Cycles': 125.66322180844625, 'Idling Time (min)': 55.10761766890393, 'Engine Hours': 6.170746227132455, 'temperature': 16.573090875082684, 'humidity': 47.331301355744266, 'vibration_level': 2.9509771710601034, 'oil_pressure': 38.33669393077834}
+2025-07-18 11:06:51,608 - INFO - GET /latest called
+2025-07-18 11:06:51,609 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:51] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:53,132 - INFO - Inserted batch of 3 logs into MongoDB.
+2025-07-18 11:06:54,203 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:51.935092', 'operator_id': 'OP_008', 'location': 'Site_A', 'Fuel Used (L)': 30.503817860651353, 'Load Cycles': 306.52514095812137, 'Idling Time (min)': 44.144679679719154, 'Engine Hours': 7.615655449181069, 'temperature': 31.366580179088366, 'humidity': 45.40034210642912, 'vibration_level': 4.125094461078969, 'oil_pressure': 30.332430345956222}
+2025-07-18 11:06:54,203 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:06:51.935092', 'operator_id': 'OP_008', 'location': 'Site_A', 'Fuel Used (L)': 30.503817860651353, 'Load Cycles': 306.52514095812137, 'Idling Time (min)': 44.144679679719154, 'Engine Hours': 7.615655449181069, 'temperature': 31.366580179088366, 'humidity': 45.40034210642912, 'vibration_level': 4.125094461078969, 'oil_pressure': 30.332430345956222}
+2025-07-18 11:06:56,303 - INFO - GET /latest called
+2025-07-18 11:06:56,303 - INFO - 127.0.0.1 - - [18/Jul/2025 11:06:56] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:06:56,960 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:54.935721', 'operator_id': 'OP_003', 'location': 'Site_D', 'Fuel Used (L)': 33.03815118812586, 'Load Cycles': 81.46431627461666, 'Idling Time (min)': 62.26080854414295, 'Engine Hours': 10.79873282205648, 'temperature': 20.84801365493593, 'humidity': 48.120824368414084, 'vibration_level': 3.1162357392127733, 'oil_pressure': 38.24329746226928}
+2025-07-18 11:06:56,978 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:06:54.935721', 'operator_id': 'OP_003', 'location': 'Site_D', 'Fuel Used (L)': 33.03815118812586, 'Load Cycles': 81.46431627461666, 'Idling Time (min)': 62.26080854414295, 'Engine Hours': 10.79873282205648, 'temperature': 20.84801365493593, 'humidity': 48.120824368414084, 'vibration_level': 3.1162357392127733, 'oil_pressure': 38.24329746226928}
+2025-07-18 11:06:58,309 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:06:59,716 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:57.936366', 'operator_id': 'OP_001', 'location': 'Site_D', 'Fuel Used (L)': 37.900739433327885, 'Load Cycles': 123.95490678692482, 'Idling Time (min)': 65.0606391418562, 'Engine Hours': 8.160520960753793, 'temperature': 25.22328019523348, 'humidity': 63.517547237113504, 'vibration_level': 2.8753302177737536, 'oil_pressure': 40.76946007819096}
+2025-07-18 11:06:59,733 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:06:57.936366', 'operator_id': 'OP_001', 'location': 'Site_D', 'Fuel Used (L)': 37.900739433327885, 'Load Cycles': 123.95490678692482, 'Idling Time (min)': 65.0606391418562, 'Engine Hours': 8.160520960753793, 'temperature': 25.22328019523348, 'humidity': 63.517547237113504, 'vibration_level': 2.8753302177737536, 'oil_pressure': 40.76946007819096}
+2025-07-18 11:07:01,615 - INFO - GET /latest called
+2025-07-18 11:07:01,615 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:01] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:02,358 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:07:00.936955', 'operator_id': 'OP_005', 'location': 'Site_A', 'Fuel Used (L)': 22.29549867454216, 'Load Cycles': 43.24002811542201, 'Idling Time (min)': 44.539822963637725, 'Engine Hours': 3.185028006711857, 'temperature': 25.991618160657257, 'humidity': 30.109273036699594, 'vibration_level': 1.2984095614988613, 'oil_pressure': 35.17758998641874}
+2025-07-18 11:07:02,358 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:07:00.936955', 'operator_id': 'OP_005', 'location': 'Site_A', 'Fuel Used (L)': 22.29549867454216, 'Load Cycles': 43.24002811542201, 'Idling Time (min)': 44.539822963637725, 'Engine Hours': 3.185028006711857, 'temperature': 25.991618160657257, 'humidity': 30.109273036699594, 'vibration_level': 1.2984095614988613, 'oil_pressure': 35.17758998641874}
+2025-07-18 11:07:04,232 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:05,242 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:07:03.938099', 'operator_id': 'OP_002', 'location': 'Site_A', 'Fuel Used (L)': 28.944437607326854, 'Load Cycles': 162.7116843542995, 'Idling Time (min)': 46.58897436377525, 'Engine Hours': 9.268977116825571, 'temperature': 17.3978199214568, 'humidity': 42.030705423036245, 'vibration_level': 1.8665019032153793, 'oil_pressure': 36.398673417412965}
+2025-07-18 11:07:06,304 - INFO - GET /latest called
+2025-07-18 11:07:06,305 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:06] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:08,353 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:07:06.938784', 'operator_id': 'OP_006', 'location': 'Site_A', 'Fuel Used (L)': 19.90214971548795, 'Load Cycles': 148.82257046353342, 'Idling Time (min)': 58.503613423307854, 'Engine Hours': 6.680995104400664, 'temperature': 22.338297548777124, 'humidity': 49.85565538999048, 'vibration_level': 3.8230228830375754, 'oil_pressure': 29.309399397198604}
+2025-07-18 11:07:08,371 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:07:06.938784', 'operator_id': 'OP_006', 'location': 'Site_A', 'Fuel Used (L)': 19.90214971548795, 'Load Cycles': 148.82257046353342, 'Idling Time (min)': 58.503613423307854, 'Engine Hours': 6.680995104400664, 'temperature': 22.338297548777124, 'humidity': 49.85565538999048, 'vibration_level': 3.8230228830375754, 'oil_pressure': 29.309399397198604}
+2025-07-18 11:07:09,895 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:10,859 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:07:09.941443', 'operator_id': 'OP_008', 'location': 'Site_B', 'Fuel Used (L)': 22.864873547881214, 'Load Cycles': 86.24421249833966, 'Idling Time (min)': 30.454935381485114, 'Engine Hours': 8.793992817759197, 'temperature': 17.253816814603617, 'humidity': 48.364105817189945, 'vibration_level': 2.94771585304931, 'oil_pressure': 35.791971404386466}
+2025-07-18 11:07:11,062 - INFO - GET /latest called
+2025-07-18 11:07:11,063 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:11] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:11,064 - INFO - GET /all called
+2025-07-18 11:07:11,069 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:11] "GET /all HTTP/1.1" 200 -
+2025-07-18 11:07:14,387 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:07:12.943367', 'operator_id': 'OP_010', 'location': 'Site_C', 'Fuel Used (L)': 31.356007861749134, 'Load Cycles': 117.16096356058623, 'Idling Time (min)': 49.25322871498166, 'Engine Hours': 5.873139749991211, 'temperature': 20.32007278179576, 'humidity': 53.02118432561216, 'vibration_level': 3.573257584686459, 'oil_pressure': 32.607916756025084}
+2025-07-18 11:07:15,649 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:15,768 - INFO - GET /latest called
+2025-07-18 11:07:15,769 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:15] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:16,820 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:07:15.944104', 'operator_id': 'OP_009', 'location': 'Site_B', 'Fuel Used (L)': 23.84633025000967, 'Load Cycles': 152.10118668875785, 'Idling Time (min)': 70.64723213339279, 'Engine Hours': 4.401552483674293, 'temperature': 15.392234080198495, 'humidity': 29.945542971023322, 'vibration_level': 4.487749540731237, 'oil_pressure': 39.2453061731527}
+2025-07-18 11:07:16,835 - INFO - Received message: {'machine_id': 'MACHINE_004', 'timestamp': '2025-07-18T11:07:15.944104', 'operator_id': 'OP_009', 'location': 'Site_B', 'Fuel Used (L)': 23.84633025000967, 'Load Cycles': 152.10118668875785, 'Idling Time (min)': 70.64723213339279, 'Engine Hours': 4.401552483674293, 'temperature': 15.392234080198495, 'humidity': 29.945542971023322, 'vibration_level': 4.487749540731237, 'oil_pressure': 39.2453061731527}
+2025-07-18 11:07:19,672 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:07:18.945535', 'operator_id': 'OP_001', 'location': 'Site_B', 'Fuel Used (L)': 28.69941899533525, 'Load Cycles': 184.71728397121993, 'Idling Time (min)': 45.1940510874998, 'Engine Hours': 9.094844652967268, 'temperature': 25.913383457036037, 'humidity': 60.856682469722756, 'vibration_level': 3.475483038116728, 'oil_pressure': 34.611476573175835}
+2025-07-18 11:07:19,690 - INFO - Received message: {'machine_id': 'MACHINE_005', 'timestamp': '2025-07-18T11:07:18.945535', 'operator_id': 'OP_001', 'location': 'Site_B', 'Fuel Used (L)': 28.69941899533525, 'Load Cycles': 184.71728397121993, 'Idling Time (min)': 45.1940510874998, 'Engine Hours': 9.094844652967268, 'temperature': 25.913383457036037, 'humidity': 60.856682469722756, 'vibration_level': 3.475483038116728, 'oil_pressure': 34.611476573175835}
+2025-07-18 11:07:21,066 - INFO - GET /latest called
+2025-07-18 11:07:21,066 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:21] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:22,501 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:23,322 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:07:21.946251', 'operator_id': 'OP_005', 'location': 'Site_C', 'Fuel Used (L)': 32.04394146801231, 'Load Cycles': 137.33778231946732, 'Idling Time (min)': 46.9849819992215, 'Engine Hours': 13.529509355151921, 'temperature': 22.824919749286714, 'humidity': 60.1639186179741, 'vibration_level': 3.0640921509156676, 'oil_pressure': 43.553407685267736}
+2025-07-18 11:07:23,406 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:07:21.946251', 'operator_id': 'OP_005', 'location': 'Site_C', 'Fuel Used (L)': 32.04394146801231, 'Load Cycles': 137.33778231946732, 'Idling Time (min)': 46.9849819992215, 'Engine Hours': 13.529509355151921, 'temperature': 22.824919749286714, 'humidity': 60.1639186179741, 'vibration_level': 3.0640921509156676, 'oil_pressure': 43.553407685267736}
+2025-07-18 11:07:25,761 - INFO - GET /latest called
+2025-07-18 11:07:25,761 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:25] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:25,863 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:07:24.947249', 'operator_id': 'OP_006', 'location': 'Site_B', 'Fuel Used (L)': 33.692297246976054, 'Load Cycles': 138.6002235066221, 'Idling Time (min)': 38.54016613227512, 'Engine Hours': 6.325636708597272, 'temperature': 15.324024826556366, 'humidity': 67.27739430226056, 'vibration_level': 2.7069254435217784, 'oil_pressure': 41.9069026186168}
+2025-07-18 11:07:25,863 - INFO - Received message: {'machine_id': 'MACHINE_001', 'timestamp': '2025-07-18T11:07:24.947249', 'operator_id': 'OP_006', 'location': 'Site_B', 'Fuel Used (L)': 33.692297246976054, 'Load Cycles': 138.6002235066221, 'Idling Time (min)': 38.54016613227512, 'Engine Hours': 6.325636708597272, 'temperature': 15.324024826556366, 'humidity': 67.27739430226056, 'vibration_level': 2.7069254435217784, 'oil_pressure': 41.9069026186168}
+2025-07-18 11:07:27,484 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:29,352 - INFO - Received message: {'machine_id': 'MACHINE_002', 'timestamp': '2025-07-18T11:07:27.948038', 'operator_id': 'OP_002', 'location': 'Site_C', 'Fuel Used (L)': 23.542779249545504, 'Load Cycles': 168.8361798192946, 'Idling Time (min)': 34.88554702395501, 'Engine Hours': 3.7249593956170655, 'temperature': 29.1960354056759, 'humidity': 39.49862515606663, 'vibration_level': 1.8634557315109692, 'oil_pressure': 34.11536822634879}
+2025-07-18 11:07:31,067 - INFO - GET /latest called
+2025-07-18 11:07:31,067 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:31] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:32,057 - INFO - Received message: {'machine_id': 'MACHINE_003', 'timestamp': '2025-07-18T11:07:30.948701', 'operator_id': 'OP_003', 'location': 'Site_D', 'Fuel Used (L)': 30.371954925748987, 'Load Cycles': 163.44700109134075, 'Idling Time (min)': 92.1117177835164, 'Engine Hours': 8.493060300801826, 'temperature': 26.607727476088847, 'humidity': 56.59028002411301, 'vibration_level': 3.0625773417357887, 'oil_pressure': 35.82653540078253}
+2025-07-18 11:07:33,867 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-18 11:07:35,765 - INFO - GET /latest called
+2025-07-18 11:07:35,765 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:35] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:38,868 - INFO - Inserted batch of 2 logs into MongoDB.
+2025-07-18 11:07:41,060 - INFO - GET /latest called
+2025-07-18 11:07:41,061 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:41] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:45,764 - INFO - GET /latest called
+2025-07-18 11:07:45,765 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:45] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:51,061 - INFO - GET /latest called
+2025-07-18 11:07:51,061 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:51] "GET /latest HTTP/1.1" 200 -
+2025-07-18 11:07:56,198 - INFO - GET /latest called
+2025-07-18 11:07:56,199 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:56] "GET /latest HTTP/1.1" 200 -
