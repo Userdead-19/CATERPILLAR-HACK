@@ -3565,3 +3565,55 @@ KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Tas
 2025-07-18 11:07:51,061 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:51] "GET /latest HTTP/1.1" 200 -
 2025-07-18 11:07:56,198 - INFO - GET /latest called
 2025-07-18 11:07:56,199 - INFO - 127.0.0.1 - - [18/Jul/2025 11:07:56] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:25:34,087 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 12:25:34,092 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 12:25:34,644 - INFO - Task time estimation model loaded successfully.
+2025-07-18 12:25:34,644 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 12:25:34,647 - INFO - Starting Flask app...
+2025-07-18 12:25:34,663 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 12:25:34,663 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 12:25:34,665 - INFO -  * Restarting with stat
+2025-07-18 12:25:36,465 - INFO - Connected to MQTT broker.
+2025-07-18 12:25:36,466 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 12:25:38,543 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 12:25:38,548 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 12:25:39,082 - INFO - Task time estimation model loaded successfully.
+2025-07-18 12:25:39,083 - INFO - Expected features: ['Terrain_Muddy', 'Terrain_Rocky', 'Task_Type_Grading', 'Task_Type_Loading', 'Task_Type_Transport', 'Engine_Hours', 'Fuel_Used_L', 'Load_Cycles', 'Idling_Time_min', 'Seatbelt_Status', 'Safety_Alert', 'Operator_ID', 'Weather_Temp_C', 'Weather_Rainfall_mm', 'Weather_Wind_kmph']
+2025-07-18 12:25:39,085 - INFO - Starting Flask app...
+2025-07-18 12:25:39,096 - WARNING -  * Debugger is active!
+2025-07-18 12:25:39,103 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 12:25:40,686 - INFO - Connected to MQTT broker.
+2025-07-18 12:25:40,686 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 12:26:28,319 - INFO - GET /latest called
+2025-07-18 12:26:28,320 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:28] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:28,321 - INFO - GET /all called
+2025-07-18 12:26:28,329 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:28] "GET /all HTTP/1.1" 200 -
+2025-07-18 12:26:31,387 - INFO - GET /model-info called
+2025-07-18 12:26:31,388 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:31] "GET /model-info HTTP/1.1" 200 -
+2025-07-18 12:26:31,703 - INFO - GET /model-info called
+2025-07-18 12:26:31,704 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:31] "GET /model-info HTTP/1.1" 200 -
+2025-07-18 12:26:32,998 - INFO - GET /latest called
+2025-07-18 12:26:32,998 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:32] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:38,320 - INFO - GET /latest called
+2025-07-18 12:26:38,320 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:38] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:43,009 - INFO - GET /latest called
+2025-07-18 12:26:43,009 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:43] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:48,305 - INFO - GET /latest called
+2025-07-18 12:26:48,305 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:48] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:52,998 - INFO - GET /latest called
+2025-07-18 12:26:52,998 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:52] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:26:54,342 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:54] "OPTIONS /predict-task-time HTTP/1.1" 200 -
+2025-07-18 12:26:54,590 - INFO - POST /predict-task-time called
+2025-07-18 12:26:54,590 - INFO - Received features: {'Engine_Hours': 20, 'Fuel_Used_L': 1, 'Load_Cycles': 3, 'Idling_Time_min': 20, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 1, 'Weather_Temp_C': 25, 'Weather_Rainfall_mm': 0, 'Weather_Wind_kmph': 10, 'Terrain': 'Rocky', 'Task_Type': 'Transport'}
+2025-07-18 12:26:54,623 - INFO - Task time prediction: 68.26 minutes
+2025-07-18 12:26:54,624 - INFO - Prediction response: {'estimated_time_minutes': 68.26, 'estimated_time_hours': 1.14, 'input_features': {'Engine_Hours': 20, 'Fuel_Used_L': 1, 'Load_Cycles': 3, 'Idling_Time_min': 20, 'Seatbelt_Status': 1, 'Safety_Alert': 0, 'Operator_ID': 1, 'Weather_Temp_C': 25, 'Weather_Rainfall_mm': 0, 'Weather_Wind_kmph': 10, 'Terrain': 'Rocky', 'Task_Type': 'Transport'}}
+2025-07-18 12:26:54,624 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:54] "POST /predict-task-time HTTP/1.1" 200 -
+2025-07-18 12:26:57,998 - INFO - GET /latest called
+2025-07-18 12:26:57,998 - INFO - 127.0.0.1 - - [18/Jul/2025 12:26:57] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:27:03,517 - INFO - GET /latest called
+2025-07-18 12:27:03,518 - INFO - 127.0.0.1 - - [18/Jul/2025 12:27:03] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:27:08,194 - INFO - GET /latest called
+2025-07-18 12:27:08,194 - INFO - 127.0.0.1 - - [18/Jul/2025 12:27:08] "GET /latest HTTP/1.1" 200 -
+2025-07-18 12:27:13,506 - INFO - GET /latest called
+2025-07-18 12:27:13,506 - INFO - 127.0.0.1 - - [18/Jul/2025 12:27:13] "GET /latest HTTP/1.1" 200 -
