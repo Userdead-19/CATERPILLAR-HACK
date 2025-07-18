@@ -8,7 +8,7 @@ DATA_TOPIC = "iot/machine/data"
 ALERT_TOPIC = "iot/machine/alerts"
 
 
-def generate_payload():
+def generate_payload_with_extra_fields():
     return {
         "Machine ID": "EXC001",
         "Operator ID": "OP1001",
@@ -18,6 +18,11 @@ def generate_payload():
         "Idling Time (min)": random.randint(5, 60),
         "Seatbelt Status": random.choice(["Fastened", "Unfastened"]),
         "Safety Alert Triggered": random.choice(["Yes", "No"]),
+        # Extra fields not used in model but useful in telemetry
+        "Tire Pressure (PSI)": round(random.uniform(30, 80), 1),
+        "Hydraulic Pressure (Bar)": round(random.uniform(150, 250), 1),
+        "Oil Temperature (°C)": round(random.uniform(60, 120), 1),
+        "Battery Voltage (V)": round(random.uniform(11.5, 14.8), 2),
     }
 
 
@@ -38,7 +43,7 @@ def run_simulator():
     client.loop_start()
 
     while True:
-        data = generate_payload()
+        data = generate_payload_with_extra_fields()
         client.publish(DATA_TOPIC, json.dumps(data))
         print("📤 Sent:", data)
         time.sleep(2)

@@ -4,12 +4,11 @@ import threading
 import json
 import time
 from pymongo import MongoClient
-from ml_model import detect_anomalies_batch  # Updated model
+from ml_model import detect_anomalies_batch
 import queue
 import logging
 from bson import ObjectId
 from flask_cors import CORS
-
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -20,6 +19,7 @@ logging.basicConfig(
 
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:3000"])
+
 # --- MongoDB Setup ---
 mongo_client = MongoClient("mongodb://localhost:27017/")
 db = mongo_client["iot_db"]
@@ -32,6 +32,9 @@ NOTIFY_TOPIC = "iot/machine/alerts"
 # --- Queue and Data Store ---
 message_queue = queue.Queue()
 latest_data = {}
+
+# Required features for anomaly detection
+REQUIRED_KEYS = {"Fuel Used (L)", "Load Cycles", "Idling Time (min)", "Engine Hours"}
 
 
 # --- MQTT Callbacks ---
@@ -56,7 +59,7 @@ def on_message(client, userdata, msg):
 def publish_alert(message):
     try:
         if "_id" in message:
-            message["_id"] = str(message["_id"])  # Convert ObjectId to string
+            message["_id"] = str(message["_id"])
 
         alert_client = mqtt.Client()
         alert_client.connect(MQTT_BROKER, 1883, 60)
@@ -71,6 +74,8 @@ def publish_alert(message):
 
 # --- Batch Processor ---
 def batch_processor():
+    global latest_data
+
     while True:
         time.sleep(10)  # 10-second batch window
         batch = []
@@ -87,15 +92,20 @@ def batch_processor():
         except Exception as e:
             logging.exception("Failed to insert batch to MongoDB.")
 
-        try:
-            alerts = detect_anomalies_batch(batch)
-            for alert in alerts:
-                logging.warning(f"⚠️ Anomaly Detected: {alert}")
-                publish_alert(alert)
-        except Exception as e:
-            logging.exception("Anomaly detection failed.")
+        # Validate feature keys before anomaly detection
+        if all(REQUIRED_KEYS.issubset(record.keys()) for record in batch):
+            try:
+                alerts = detect_anomalies_batch(batch)
+                for alert in alerts:
+                    logging.warning(f"⚠️ Anomaly Detected: {alert}")
+                    publish_alert(alert)
+            except Exception as e:
+                logging.exception("Anomaly detection failed.")
+        else:
+            logging.error(
+                "Batch missing required feature columns. Skipping anomaly detection."
+            )
 
-        global latest_data
         latest_data = batch[-1]
 
 

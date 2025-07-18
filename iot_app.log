@@ -2361,3 +2361,470 @@
 2025-07-17 14:49:59,446 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.2, 'Fuel Used (L)': 5.8, 'Load Cycles': 4, 'Idling Time (min)': 30, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No'}
 2025-07-17 14:50:01,546 - INFO - Inserted batch of 5 logs into MongoDB.
 2025-07-17 14:50:01,623 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.0, 'Fuel Used (L)': 6.8, 'Load Cycles': 6, 'Idling Time (min)': 60, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes'}
+2025-07-17 14:57:47,781 - INFO - Starting Flask app...
+2025-07-17 14:57:47,799 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 14:57:47,799 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 14:57:47,800 - INFO -  * Restarting with stat
+2025-07-17 14:57:49,130 - INFO - Connected to MQTT broker.
+2025-07-17 14:57:49,130 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 14:57:49,494 - INFO - Starting Flask app...
+2025-07-17 14:57:49,503 - WARNING -  * Debugger is active!
+2025-07-17 14:57:49,506 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 14:57:50,839 - INFO - Connected to MQTT broker.
+2025-07-17 14:57:50,839 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 14:57:52,503 - INFO - GET /latest called
+2025-07-17 14:57:52,504 - INFO - 127.0.0.1 - - [17/Jul/2025 14:57:52] "GET /latest HTTP/1.1" 200 -
+2025-07-17 14:58:35,852 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-17 14:58:36,277 - INFO -  * Restarting with stat
+2025-07-17 14:58:37,967 - INFO - Starting Flask app...
+2025-07-17 14:58:37,977 - WARNING -  * Debugger is active!
+2025-07-17 14:58:37,980 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 14:58:38,549 - INFO - Connected to MQTT broker.
+2025-07-17 14:58:38,550 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 14:58:51,270 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.1, 'Fuel Used (L)': 3.1, 'Load Cycles': 14, 'Idling Time (min)': 18, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:58:52,579 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.4, 'Fuel Used (L)': 6.7, 'Load Cycles': 5, 'Idling Time (min)': 59, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:58:52,579 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.4, 'Fuel Used (L)': 6.7, 'Load Cycles': 5, 'Idling Time (min)': 59, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:58:54,428 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.9, 'Fuel Used (L)': 4.5, 'Load Cycles': 1, 'Idling Time (min)': 28, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:58:56,471 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.4, 'Fuel Used (L)': 6.2, 'Load Cycles': 15, 'Idling Time (min)': 51, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:58:56,471 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.4, 'Fuel Used (L)': 6.2, 'Load Cycles': 15, 'Idling Time (min)': 51, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:58:57,798 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 14:58:57,820 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 34, in detect_anomalies_batch
+    anomaly_flags = {label: bool(pred[i]) for i, label in enumerate(anomaly_labels)}
+                     ^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 14:58:57,981 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 14:58:58,003 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 34, in detect_anomalies_batch
+    anomaly_flags = {label: bool(pred[i]) for i, label in enumerate(anomaly_labels)}
+                     ^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 14:58:58,440 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.6, 'Fuel Used (L)': 2.9, 'Load Cycles': 12, 'Idling Time (min)': 6, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 14:58:58,442 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.6, 'Fuel Used (L)': 2.9, 'Load Cycles': 12, 'Idling Time (min)': 6, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 14:59:00,389 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.4, 'Fuel Used (L)': 5.3, 'Load Cycles': 12, 'Idling Time (min)': 6, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:00,399 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.4, 'Fuel Used (L)': 5.3, 'Load Cycles': 12, 'Idling Time (min)': 6, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:02,362 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.9, 'Fuel Used (L)': 3.1, 'Load Cycles': 12, 'Idling Time (min)': 43, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:59:02,367 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.9, 'Fuel Used (L)': 3.1, 'Load Cycles': 12, 'Idling Time (min)': 43, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:59:04,347 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.3, 'Fuel Used (L)': 2.5, 'Load Cycles': 7, 'Idling Time (min)': 38, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:04,353 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.3, 'Fuel Used (L)': 2.5, 'Load Cycles': 7, 'Idling Time (min)': 38, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:06,362 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.6, 'Fuel Used (L)': 4.6, 'Load Cycles': 4, 'Idling Time (min)': 31, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:07,822 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 14:59:07,845 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 34, in detect_anomalies_batch
+    anomaly_flags = {label: bool(pred[i]) for i, label in enumerate(anomaly_labels)}
+                     ^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 14:59:08,005 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 14:59:08,028 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 34, in detect_anomalies_batch
+    anomaly_flags = {label: bool(pred[i]) for i, label in enumerate(anomaly_labels)}
+                     ^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 14:59:08,484 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.5, 'Fuel Used (L)': 2.5, 'Load Cycles': 2, 'Idling Time (min)': 55, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 14:59:10,367 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.8, 'Fuel Used (L)': 3.9, 'Load Cycles': 11, 'Idling Time (min)': 36, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:10,377 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.8, 'Fuel Used (L)': 3.9, 'Load Cycles': 11, 'Idling Time (min)': 36, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:12,350 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.5, 'Fuel Used (L)': 6.6, 'Load Cycles': 5, 'Idling Time (min)': 30, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:12,360 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.5, 'Fuel Used (L)': 6.6, 'Load Cycles': 5, 'Idling Time (min)': 30, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 14:59:14,544 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.3, 'Fuel Used (L)': 5.9, 'Load Cycles': 8, 'Idling Time (min)': 7, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:01:44,102 - INFO - Starting Flask app...
+2025-07-17 15:01:44,117 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:01:44,118 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:01:44,120 - INFO -  * Restarting with stat
+2025-07-17 15:01:44,881 - INFO - Connected to MQTT broker.
+2025-07-17 15:01:44,882 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:01:45,805 - INFO - Starting Flask app...
+2025-07-17 15:01:45,814 - WARNING -  * Debugger is active!
+2025-07-17 15:01:45,822 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:01:46,485 - INFO - Connected to MQTT broker.
+2025-07-17 15:01:46,485 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.2, 'Fuel Used (L)': 5.6, 'Load Cycles': 13, 'Idling Time (min)': 50, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:46,485 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:01:48,436 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.8, 'Fuel Used (L)': 3.9, 'Load Cycles': 15, 'Idling Time (min)': 20, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:48,452 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.8, 'Fuel Used (L)': 3.9, 'Load Cycles': 15, 'Idling Time (min)': 20, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:50,457 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.0, 'Fuel Used (L)': 6.9, 'Load Cycles': 12, 'Idling Time (min)': 45, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:52,431 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.6, 'Fuel Used (L)': 5.0, 'Load Cycles': 2, 'Idling Time (min)': 32, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:52,448 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.6, 'Fuel Used (L)': 5.0, 'Load Cycles': 2, 'Idling Time (min)': 32, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:54,127 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:01:54,150 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 35, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:01:54,446 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.1, 'Fuel Used (L)': 4.1, 'Load Cycles': 7, 'Idling Time (min)': 23, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:01:54,472 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.1, 'Fuel Used (L)': 4.1, 'Load Cycles': 7, 'Idling Time (min)': 23, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:01:55,829 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:01:55,850 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 35, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:01:56,430 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.6, 'Fuel Used (L)': 4.1, 'Load Cycles': 6, 'Idling Time (min)': 48, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:56,443 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.6, 'Fuel Used (L)': 4.1, 'Load Cycles': 6, 'Idling Time (min)': 48, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:01:58,458 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.4, 'Fuel Used (L)': 3.2, 'Load Cycles': 5, 'Idling Time (min)': 11, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:47,051 - INFO - Starting Flask app...
+2025-07-17 15:03:47,064 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:03:47,064 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:03:47,065 - INFO -  * Restarting with stat
+2025-07-17 15:03:48,602 - INFO - Connected to MQTT broker.
+2025-07-17 15:03:48,603 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:03:48,736 - INFO - Starting Flask app...
+2025-07-17 15:03:48,745 - WARNING -  * Debugger is active!
+2025-07-17 15:03:48,749 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:03:49,995 - INFO - Connected to MQTT broker.
+2025-07-17 15:03:49,996 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:03:51,304 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.2, 'Fuel Used (L)': 4.5, 'Load Cycles': 10, 'Idling Time (min)': 18, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:03:51,308 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.2, 'Fuel Used (L)': 4.5, 'Load Cycles': 10, 'Idling Time (min)': 18, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:03:54,486 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.2, 'Fuel Used (L)': 2.8, 'Load Cycles': 14, 'Idling Time (min)': 27, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:03:54,486 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.2, 'Fuel Used (L)': 3.6, 'Load Cycles': 2, 'Idling Time (min)': 46, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:54,497 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.2, 'Fuel Used (L)': 2.8, 'Load Cycles': 14, 'Idling Time (min)': 27, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:03:54,498 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.2, 'Fuel Used (L)': 3.6, 'Load Cycles': 2, 'Idling Time (min)': 46, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:57,075 - INFO - Inserted batch of 3 logs into MongoDB.
+2025-07-17 15:03:57,096 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 40, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:03:57,876 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.9, 'Fuel Used (L)': 5.6, 'Load Cycles': 1, 'Idling Time (min)': 47, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:57,876 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.9, 'Fuel Used (L)': 5.6, 'Load Cycles': 1, 'Idling Time (min)': 47, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:58,747 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.4, 'Fuel Used (L)': 2.9, 'Load Cycles': 4, 'Idling Time (min)': 38, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:58,747 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.4, 'Fuel Used (L)': 2.9, 'Load Cycles': 4, 'Idling Time (min)': 38, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:03:58,761 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:03:58,783 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 40, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:04:01,180 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.3, 'Fuel Used (L)': 5.4, 'Load Cycles': 10, 'Idling Time (min)': 24, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:04:01,182 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.3, 'Fuel Used (L)': 5.4, 'Load Cycles': 10, 'Idling Time (min)': 24, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:04:03,280 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.2, 'Fuel Used (L)': 4.0, 'Load Cycles': 10, 'Idling Time (min)': 49, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:04:04,841 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.2, 'Fuel Used (L)': 2.0, 'Load Cycles': 5, 'Idling Time (min)': 23, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:04:04,844 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.2, 'Fuel Used (L)': 2.0, 'Load Cycles': 5, 'Idling Time (min)': 23, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:30,868 - INFO - Starting Flask app...
+2025-07-17 15:05:30,881 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:05:30,882 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:05:30,883 - INFO -  * Restarting with stat
+2025-07-17 15:05:32,310 - INFO - Connected to MQTT broker.
+2025-07-17 15:05:32,310 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:05:32,566 - INFO - Starting Flask app...
+2025-07-17 15:05:32,574 - WARNING -  * Debugger is active!
+2025-07-17 15:05:32,578 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:05:33,493 - INFO - Connected to MQTT broker.
+2025-07-17 15:05:33,493 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:05:34,915 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.8, 'Fuel Used (L)': 2.2, 'Load Cycles': 9, 'Idling Time (min)': 25, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:05:36,606 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.9, 'Fuel Used (L)': 4.6, 'Load Cycles': 12, 'Idling Time (min)': 8, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:05:38,551 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.8, 'Fuel Used (L)': 4.6, 'Load Cycles': 8, 'Idling Time (min)': 33, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:38,568 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.8, 'Fuel Used (L)': 4.6, 'Load Cycles': 8, 'Idling Time (min)': 33, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:40,579 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.2, 'Fuel Used (L)': 5.9, 'Load Cycles': 6, 'Idling Time (min)': 42, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:05:40,871 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:05:40,896 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:05:42,550 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.2, 'Fuel Used (L)': 5.7, 'Load Cycles': 14, 'Idling Time (min)': 11, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:42,579 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:05:42,603 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 91, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:05:44,501 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.5, 'Fuel Used (L)': 4.9, 'Load Cycles': 4, 'Idling Time (min)': 47, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:44,567 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.5, 'Fuel Used (L)': 4.9, 'Load Cycles': 4, 'Idling Time (min)': 47, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:05:46,509 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.1, 'Fuel Used (L)': 5.9, 'Load Cycles': 4, 'Idling Time (min)': 50, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:05:46,524 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.1, 'Fuel Used (L)': 5.9, 'Load Cycles': 4, 'Idling Time (min)': 50, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:07:32,094 - INFO - Starting Flask app...
+2025-07-17 15:07:32,107 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:07:32,107 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:07:32,109 - INFO -  * Restarting with stat
+2025-07-17 15:07:33,042 - INFO - Connected to MQTT broker.
+2025-07-17 15:07:33,043 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:07:33,783 - INFO - Starting Flask app...
+2025-07-17 15:07:33,792 - WARNING -  * Debugger is active!
+2025-07-17 15:07:33,796 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:07:34,448 - INFO - Connected to MQTT broker.
+2025-07-17 15:07:34,448 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:07:34,549 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.2, 'Fuel Used (L)': 4.5, 'Load Cycles': 6, 'Idling Time (min)': 27, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:36,584 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.8, 'Fuel Used (L)': 5.1, 'Load Cycles': 8, 'Idling Time (min)': 23, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:38,549 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.1, 'Fuel Used (L)': 6.3, 'Load Cycles': 5, 'Idling Time (min)': 34, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:38,560 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.1, 'Fuel Used (L)': 6.3, 'Load Cycles': 5, 'Idling Time (min)': 34, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:40,592 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.7, 'Fuel Used (L)': 5.4, 'Load Cycles': 11, 'Idling Time (min)': 25, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:07:40,596 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.7, 'Fuel Used (L)': 5.4, 'Load Cycles': 11, 'Idling Time (min)': 25, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:07:42,111 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:07:42,132 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:07:42,554 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.3, 'Fuel Used (L)': 5.1, 'Load Cycles': 11, 'Idling Time (min)': 15, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:42,561 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.3, 'Fuel Used (L)': 5.1, 'Load Cycles': 11, 'Idling Time (min)': 15, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:07:43,811 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:07:43,832 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:07:44,556 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.7, 'Fuel Used (L)': 6.9, 'Load Cycles': 4, 'Idling Time (min)': 26, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:07:46,579 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.3, 'Fuel Used (L)': 6.1, 'Load Cycles': 5, 'Idling Time (min)': 28, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:25,294 - INFO - Starting Flask app...
+2025-07-17 15:08:25,308 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:08:25,308 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:08:25,310 - INFO -  * Restarting with stat
+2025-07-17 15:08:26,216 - INFO - Connected to MQTT broker.
+2025-07-17 15:08:26,216 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:08:26,661 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.4, 'Fuel Used (L)': 5.5, 'Load Cycles': 3, 'Idling Time (min)': 36, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:27,010 - INFO - Starting Flask app...
+2025-07-17 15:08:27,019 - WARNING -  * Debugger is active!
+2025-07-17 15:08:27,023 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:08:28,137 - INFO - Connected to MQTT broker.
+2025-07-17 15:08:28,137 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:08:28,855 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.0, 'Fuel Used (L)': 6.6, 'Load Cycles': 14, 'Idling Time (min)': 47, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:30,822 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.6, 'Fuel Used (L)': 2.2, 'Load Cycles': 11, 'Idling Time (min)': 51, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:33,359 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.7, 'Fuel Used (L)': 2.5, 'Load Cycles': 13, 'Idling Time (min)': 59, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:34,753 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.1, 'Fuel Used (L)': 2.0, 'Load Cycles': 4, 'Idling Time (min)': 51, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:35,309 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:08:35,331 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 44, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:08:36,723 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.6, 'Fuel Used (L)': 4.7, 'Load Cycles': 5, 'Idling Time (min)': 17, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:37,013 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:08:37,037 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 44, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:08:39,002 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.7, 'Fuel Used (L)': 4.6, 'Load Cycles': 10, 'Idling Time (min)': 40, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:40,774 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.4, 'Fuel Used (L)': 2.3, 'Load Cycles': 12, 'Idling Time (min)': 46, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:42,938 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.0, 'Fuel Used (L)': 3.3, 'Load Cycles': 15, 'Idling Time (min)': 60, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:43,875 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.0, 'Fuel Used (L)': 3.3, 'Load Cycles': 15, 'Idling Time (min)': 60, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:44,644 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.7, 'Fuel Used (L)': 3.6, 'Load Cycles': 12, 'Idling Time (min)': 53, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:08:45,333 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:08:45,354 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 44, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:08:46,628 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1525.6, 'Fuel Used (L)': 5.2, 'Load Cycles': 4, 'Idling Time (min)': 24, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:08:47,039 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:08:47,061 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 44, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:10:45,795 - INFO - Starting Flask app...
+2025-07-17 15:10:45,810 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:10:45,810 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:10:45,812 - INFO -  * Restarting with stat
+2025-07-17 15:10:46,955 - INFO - Connected to MQTT broker.
+2025-07-17 15:10:46,955 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:10:47,660 - INFO - Starting Flask app...
+2025-07-17 15:10:47,669 - WARNING -  * Debugger is active!
+2025-07-17 15:10:47,674 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:10:48,346 - INFO - Connected to MQTT broker.
+2025-07-17 15:10:48,346 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:10:48,780 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.4, 'Fuel Used (L)': 5.0, 'Load Cycles': 2, 'Idling Time (min)': 22, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:10:50,656 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.9, 'Fuel Used (L)': 4.5, 'Load Cycles': 3, 'Idling Time (min)': 59, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:10:52,720 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.0, 'Fuel Used (L)': 2.3, 'Load Cycles': 9, 'Idling Time (min)': 59, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:10:54,840 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.7, 'Fuel Used (L)': 3.3, 'Load Cycles': 3, 'Idling Time (min)': 58, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:10:55,813 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:10:55,836 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 46, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:10:56,669 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.7, 'Fuel Used (L)': 2.6, 'Load Cycles': 6, 'Idling Time (min)': 10, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:10:57,682 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:10:57,706 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 46, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:10:58,728 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.7, 'Fuel Used (L)': 6.7, 'Load Cycles': 11, 'Idling Time (min)': 8, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:10:58,728 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.7, 'Fuel Used (L)': 6.7, 'Load Cycles': 11, 'Idling Time (min)': 8, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:00,729 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.5, 'Fuel Used (L)': 3.2, 'Load Cycles': 11, 'Idling Time (min)': 44, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:00,745 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1534.5, 'Fuel Used (L)': 3.2, 'Load Cycles': 11, 'Idling Time (min)': 44, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:02,781 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.0, 'Fuel Used (L)': 5.2, 'Load Cycles': 12, 'Idling Time (min)': 33, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:11:04,864 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1526.6, 'Fuel Used (L)': 2.4, 'Load Cycles': 11, 'Idling Time (min)': 29, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:11:05,839 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:11:05,862 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 46, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:11:06,962 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.0, 'Fuel Used (L)': 5.7, 'Load Cycles': 13, 'Idling Time (min)': 22, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:11:06,962 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.0, 'Fuel Used (L)': 5.7, 'Load Cycles': 13, 'Idling Time (min)': 22, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:11:07,708 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:11:07,731 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 46, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:11:08,648 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1531.8, 'Fuel Used (L)': 4.1, 'Load Cycles': 12, 'Idling Time (min)': 29, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:11:10,639 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1530.9, 'Fuel Used (L)': 3.1, 'Load Cycles': 5, 'Idling Time (min)': 27, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:12,665 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1524.8, 'Fuel Used (L)': 6.6, 'Load Cycles': 12, 'Idling Time (min)': 34, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:14,832 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.7, 'Fuel Used (L)': 6.7, 'Load Cycles': 11, 'Idling Time (min)': 10, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:11:15,865 - INFO - Inserted batch of 5 logs into MongoDB.
+2025-07-17 15:11:15,886 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 46, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:12:02,482 - INFO - Starting Flask app...
+2025-07-17 15:12:02,497 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:12:02,497 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:12:02,499 - INFO -  * Restarting with stat
+2025-07-17 15:12:03,128 - INFO - Connected to MQTT broker.
+2025-07-17 15:12:03,129 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:12:04,371 - INFO - Starting Flask app...
+2025-07-17 15:12:04,397 - WARNING -  * Debugger is active!
+2025-07-17 15:12:04,403 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:12:04,676 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.3, 'Fuel Used (L)': 6.7, 'Load Cycles': 7, 'Idling Time (min)': 32, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:05,025 - INFO - Connected to MQTT broker.
+2025-07-17 15:12:05,025 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:12:06,661 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1533.3, 'Fuel Used (L)': 5.4, 'Load Cycles': 10, 'Idling Time (min)': 31, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:08,723 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.2, 'Fuel Used (L)': 5.7, 'Load Cycles': 15, 'Idling Time (min)': 59, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:11,024 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.0, 'Fuel Used (L)': 6.4, 'Load Cycles': 9, 'Idling Time (min)': 30, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:12,505 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:12:12,528 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:12:12,921 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1532.6, 'Fuel Used (L)': 5.6, 'Load Cycles': 15, 'Idling Time (min)': 35, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:14,374 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:12:14,399 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 43, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:12:15,141 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.0, 'Fuel Used (L)': 3.7, 'Load Cycles': 6, 'Idling Time (min)': 19, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:15,143 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.0, 'Fuel Used (L)': 3.7, 'Load Cycles': 6, 'Idling Time (min)': 19, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:50,045 - INFO - Starting Flask app...
+2025-07-17 15:12:50,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-17 15:12:50,059 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-17 15:12:50,060 - INFO -  * Restarting with stat
+2025-07-17 15:12:51,959 - INFO - Starting Flask app...
+2025-07-17 15:12:51,969 - WARNING -  * Debugger is active!
+2025-07-17 15:12:51,974 - INFO -  * Debugger PIN: 630-258-536
+2025-07-17 15:12:52,305 - INFO - Connected to MQTT broker.
+2025-07-17 15:12:52,305 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:12:53,553 - INFO - Connected to MQTT broker.
+2025-07-17 15:12:53,553 - INFO - Subscribed to topic: iot/machine/data
+2025-07-17 15:12:53,555 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1528.9, 'Fuel Used (L)': 6.7, 'Load Cycles': 3, 'Idling Time (min)': 31, 'Seatbelt Status': 'Fastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 0, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:55,166 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1523.4, 'Fuel Used (L)': 5.2, 'Load Cycles': 8, 'Idling Time (min)': 5, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 0, 'High Idling Time': 0, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 1, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:57,095 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1523.9, 'Fuel Used (L)': 5.0, 'Load Cycles': 13, 'Idling Time (min)': 33, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:57,095 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1523.9, 'Fuel Used (L)': 5.0, 'Load Cycles': 13, 'Idling Time (min)': 33, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 0, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 1}
+2025-07-17 15:12:59,203 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.0, 'Fuel Used (L)': 5.8, 'Load Cycles': 5, 'Idling Time (min)': 5, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:12:59,260 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1529.0, 'Fuel Used (L)': 5.8, 'Load Cycles': 5, 'Idling Time (min)': 5, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'Yes', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 1, 'Engine Hour Anomaly': 0, 'Low Load Cycles': 1, 'High Load Cycles': 0, 'Multiple Abnormalities': 0}
+2025-07-17 15:13:00,062 - INFO - Inserted batch of 4 logs into MongoDB.
+2025-07-17 15:13:00,092 - ERROR - Anomaly detection failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 98, in batch_processor
+    alerts = detect_anomalies_batch(batch)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\ml_model.py", line 45, in detect_anomalies_batch
+    anomaly_flags = dict(zip(anomaly_labels, map(bool, flat_pred)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+2025-07-17 15:13:01,283 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.5, 'Fuel Used (L)': 5.7, 'Load Cycles': 13, 'Idling Time (min)': 51, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
