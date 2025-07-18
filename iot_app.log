@@ -2828,3 +2828,261 @@ Traceback (most recent call last):
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: unhashable type: 'numpy.ndarray'
 2025-07-17 15:13:01,283 - INFO - Received message: {'Machine ID': 'EXC001', 'Operator ID': 'OP1001', 'Engine Hours': 1527.5, 'Fuel Used (L)': 5.7, 'Load Cycles': 13, 'Idling Time (min)': 51, 'Seatbelt Status': 'Unfastened', 'Safety Alert Triggered': 'No', 'Excessive Fuel Consumption': 1, 'High Idling Time': 1, 'Seatbelt Violation': 0, 'Engine Hour Anomaly': 1, 'Low Load Cycles': 0, 'High Load Cycles': 1, 'Multiple Abnormalities': 1}
+2025-07-18 09:34:20,035 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 41, in <module>
+    model_package = joblib.load("multi_anomaly_nn_model.pkl")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'multi_anomaly_nn_model.pkl'
+2025-07-18 09:34:20,036 - ERROR - Failed to load task time model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 54, in <module>
+    task_time_model = joblib.load("task_time_model.pkl")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'task_time_model.pkl'
+2025-07-18 09:34:20,038 - INFO - Starting Flask app...
+2025-07-18 09:34:20,061 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:34:20,061 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:34:20,063 - INFO -  * Restarting with stat
+2025-07-18 09:34:20,661 - INFO - Connected to MQTT broker.
+2025-07-18 09:34:20,661 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:34:23,549 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 41, in <module>
+    model_package = joblib.load("multi_anomaly_nn_model.pkl")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'multi_anomaly_nn_model.pkl'
+2025-07-18 09:34:23,551 - ERROR - Failed to load task time model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 54, in <module>
+    task_time_model = joblib.load("task_time_model.pkl")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'task_time_model.pkl'
+2025-07-18 09:34:23,553 - INFO - Starting Flask app...
+2025-07-18 09:34:23,560 - WARNING -  * Debugger is active!
+2025-07-18 09:34:23,565 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 09:34:24,147 - INFO - Connected to MQTT broker.
+2025-07-18 09:34:24,148 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:35:53,148 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:35:53,152 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:35:53,198 - ERROR - Failed to load task time model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 55, in <module>
+    task_time_features = joblib.load("task_time_features.pkl")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'task_time_features.pkl'
+2025-07-18 09:35:53,202 - INFO - Starting Flask app...
+2025-07-18 09:35:53,215 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:35:53,215 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:35:53,217 - INFO -  * Restarting with stat
+2025-07-18 09:35:53,888 - INFO - Connected to MQTT broker.
+2025-07-18 09:35:53,889 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:37:36,624 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:37:36,628 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:37:36,667 - ERROR - Failed to load task time model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 55, in <module>
+    task_time_features = joblib.load("task_time_features.pkl")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'task_time_features.pkl'
+2025-07-18 09:37:36,671 - INFO - Starting Flask app...
+2025-07-18 09:37:36,684 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:37:36,684 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:37:36,686 - INFO -  * Restarting with stat
+2025-07-18 09:37:38,357 - INFO - Connected to MQTT broker.
+2025-07-18 09:37:38,358 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:38:02,279 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:38:02,283 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:38:02,355 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:38:02,357 - INFO - Starting Flask app...
+2025-07-18 09:38:02,372 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:38:02,372 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:38:02,373 - INFO -  * Restarting with stat
+2025-07-18 09:38:04,187 - INFO - Connected to MQTT broker.
+2025-07-18 09:38:04,187 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:38:06,525 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:38:06,530 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:38:06,568 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:38:06,570 - INFO - Starting Flask app...
+2025-07-18 09:38:06,580 - WARNING -  * Debugger is active!
+2025-07-18 09:38:06,586 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 09:38:08,726 - INFO - Connected to MQTT broker.
+2025-07-18 09:38:08,726 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:40:24,724 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:40:24,727 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:40:24,766 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:40:24,769 - INFO - Starting Flask app...
+2025-07-18 09:40:24,783 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:40:24,783 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:40:24,784 - INFO -  * Restarting with stat
+2025-07-18 09:40:26,683 - INFO - Connected to MQTT broker.
+2025-07-18 09:40:26,683 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:40:29,014 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:40:29,018 - ERROR - Failed to load anomaly detection model.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 44, in <module>
+    anomaly_labels = model_package["labels"]
+                     ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'labels'
+2025-07-18 09:40:29,054 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:40:29,057 - INFO - Starting Flask app...
+2025-07-18 09:40:29,065 - WARNING -  * Debugger is active!
+2025-07-18 09:40:29,070 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 09:40:29,182 - INFO - GET /latest called
+2025-07-18 09:40:29,183 - INFO - 127.0.0.1 - - [18/Jul/2025 09:40:29] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:40:30,749 - INFO - Connected to MQTT broker.
+2025-07-18 09:40:30,750 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:42:59,380 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:42:59,383 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 09:42:59,859 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:42:59,861 - INFO - Starting Flask app...
+2025-07-18 09:42:59,874 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 09:42:59,874 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 09:42:59,877 - INFO -  * Restarting with stat
+2025-07-18 09:43:01,622 - INFO - Connected to MQTT broker.
+2025-07-18 09:43:01,623 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:43:03,412 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:43:03,416 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 09:43:03,890 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:43:03,892 - INFO - Starting Flask app...
+2025-07-18 09:43:03,900 - WARNING -  * Debugger is active!
+2025-07-18 09:43:03,906 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 09:43:04,817 - INFO - Connected to MQTT broker.
+2025-07-18 09:43:04,818 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:43:12,934 - INFO - GET /latest called
+2025-07-18 09:43:12,935 - INFO - 127.0.0.1 - - [18/Jul/2025 09:43:12] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:43:12,935 - INFO - GET /all called
+2025-07-18 09:43:12,992 - INFO - 127.0.0.1 - - [18/Jul/2025 09:43:12] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:43:24,277 - INFO - GET /latest called
+2025-07-18 09:43:24,278 - INFO - 127.0.0.1 - - [18/Jul/2025 09:43:24] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:43:24,590 - INFO - GET /all called
+2025-07-18 09:43:24,595 - INFO - 127.0.0.1 - - [18/Jul/2025 09:43:24] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:50:12,228 - INFO - GET /latest called
+2025-07-18 09:50:12,229 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:12] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:50:12,229 - INFO - GET /all called
+2025-07-18 09:50:12,234 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:12] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:50:53,357 - INFO - GET /latest called
+2025-07-18 09:50:53,358 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:53] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:50:53,673 - INFO - GET /all called
+2025-07-18 09:50:53,677 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:53] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:50:59,692 - INFO - GET /latest called
+2025-07-18 09:50:59,692 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:59] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:50:59,693 - INFO - GET /all called
+2025-07-18 09:50:59,698 - INFO - 127.0.0.1 - - [18/Jul/2025 09:50:59] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:51:02,413 - INFO - GET /latest called
+2025-07-18 09:51:02,413 - INFO - 127.0.0.1 - - [18/Jul/2025 09:51:02] "GET /latest HTTP/1.1" 200 -
+2025-07-18 09:51:02,726 - INFO - GET /all called
+2025-07-18 09:51:02,730 - INFO - 127.0.0.1 - - [18/Jul/2025 09:51:02] "GET /all HTTP/1.1" 200 -
+2025-07-18 09:51:54,103 - INFO - POST /predict-task-time called
+2025-07-18 09:51:54,128 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 09:51:54,137 - INFO - 127.0.0.1 - - [18/Jul/2025 09:51:54] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 09:53:31,001 - INFO -  * Detected change in 'D:\\Production\\CATERPILLAR HACK\\mqtt_simulator.py', reloading
+2025-07-18 09:53:32,291 - INFO -  * Restarting with stat
+2025-07-18 09:53:36,745 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-07-18 09:53:36,750 - INFO - Anomaly detection model loaded successfully.
+2025-07-18 09:53:37,551 - INFO - Task time estimation model loaded successfully.
+2025-07-18 09:53:37,553 - INFO - Starting Flask app...
+2025-07-18 09:53:37,568 - WARNING -  * Debugger is active!
+2025-07-18 09:53:37,576 - INFO -  * Debugger PIN: 630-258-536
+2025-07-18 09:53:38,882 - INFO - Connected to MQTT broker.
+2025-07-18 09:53:38,882 - INFO - Subscribed to topic: iot/machine/data
+2025-07-18 09:53:39,987 - INFO - POST /predict-task-time called
+2025-07-18 09:53:39,990 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 09:53:39,993 - INFO - 127.0.0.1 - - [18/Jul/2025 09:53:39] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -
+2025-07-18 09:53:44,261 - INFO - POST /predict-task-time called
+2025-07-18 09:53:44,263 - ERROR - Task time prediction failed.
+Traceback (most recent call last):
+  File "D:\Production\CATERPILLAR HACK\app.py", line 186, in predict_task_time_api
+    prediction = predict_task_time(features)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Production\CATERPILLAR HACK\app.py", line 147, in predict_task_time
+    input_df = pd.DataFrame([features])[task_time_features]
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\abinav\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['cat__Terrain_Muddy', 'cat__Terrain_Rocky', 'cat__Task_Type_Grading',\n       'cat__Task_Type_Loading', 'cat__Task_Type_Transport',\n       'remainder__Engine_Hours', 'remainder__Fuel_Used_L',\n       'remainder__Load_Cycles', 'remainder__Idling_Time_min',\n       'remainder__Seatbelt_Status', 'remainder__Safety_Alert',\n       'remainder__Operator_ID', 'remainder__Weather_Temp_C',\n       'remainder__Weather_Rainfall_mm', 'remainder__Weather_Wind_kmph'],\n      dtype='object')] are in the [columns]"
+2025-07-18 09:53:44,264 - INFO - 127.0.0.1 - - [18/Jul/2025 09:53:44] "[35m[1mPOST /predict-task-time HTTP/1.1[0m" 500 -

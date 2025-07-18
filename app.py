@@ -1,14 +1,17 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import paho.mqtt.client as mqtt
 import threading
 import json
 import time
 from pymongo import MongoClient
-from ml_model import detect_anomalies_batch
 import queue
 import logging
 from bson import ObjectId
 from flask_cors import CORS
+import pandas as pd
+import tensorflow as tf
+import joblib
+import numpy as np
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -33,8 +36,27 @@ NOTIFY_TOPIC = "iot/machine/alerts"
 message_queue = queue.Queue()
 latest_data = {}
 
-# Required features for anomaly detection
-REQUIRED_KEYS = {"Fuel Used (L)", "Load Cycles", "Idling Time (min)", "Engine Hours"}
+# --- Load Anomaly Detection Model ---
+try:
+    model_package = joblib.load("multi_anomaly_nn_meta.pkl")
+    anomaly_model = tf.keras.models.load_model("multi_anomaly_nn_model.h5")
+    feature_columns = model_package["features"]
+    anomaly_labels = model_package["labels"]
+    logging.info("Anomaly detection model loaded successfully.")
+except Exception as e:
+    logging.exception("Failed to load anomaly detection model.")
+    anomaly_model = None
+    feature_columns = []
+    anomaly_labels = []
+
+# --- Load Task Time Estimation Model ---
+try:
+    task_time_model = joblib.load("task_time_prediction.pkl")
+    task_time_features = joblib.load("task_time_features.pkl")
+    logging.info("Task time estimation model loaded successfully.")
+except Exception as e:
+    logging.exception("Failed to load task time model.")
+    task_time_model = None
 
 
 # --- MQTT Callbacks ---
@@ -77,7 +99,7 @@ def batch_processor():
     global latest_data
 
     while True:
-        time.sleep(10)  # 10-second batch window
+        time.sleep(10)
         batch = []
 
         while not message_queue.empty():
@@ -92,8 +114,7 @@ def batch_processor():
         except Exception as e:
             logging.exception("Failed to insert batch to MongoDB.")
 
-        # Validate feature keys before anomaly detection
-        if all(REQUIRED_KEYS.issubset(record.keys()) for record in batch):
+        if anomaly_model:
             try:
                 alerts = detect_anomalies_batch(batch)
                 for alert in alerts:
@@ -101,12 +122,34 @@ def batch_processor():
                     publish_alert(alert)
             except Exception as e:
                 logging.exception("Anomaly detection failed.")
-        else:
-            logging.error(
-                "Batch missing required feature columns. Skipping anomaly detection."
-            )
 
         latest_data = batch[-1]
+
+
+def detect_anomalies_batch(batch):
+    df = pd.DataFrame(batch)
+    input_data = df[feature_columns].values
+    predictions = anomaly_model.predict(input_data)
+    predictions = (predictions >= 0.5).astype(int)
+
+    alerts = []
+    for idx, record in enumerate(batch):
+        pred = predictions[idx].tolist()
+        anomaly_flags = dict(zip(anomaly_labels, map(bool, pred)))
+        if any(anomaly_flags.values()):
+            record.update(anomaly_flags)
+            alerts.append(record)
+    return alerts
+
+
+def predict_task_time(features):
+    if task_time_model:
+        input_df = pd.DataFrame([features])[task_time_features]
+        prediction = task_time_model.predict(input_df)
+        return float(prediction[0])
+    else:
+        logging.error("Task time model not loaded.")
+        return None
 
 
 def convert_objectid(data):
@@ -133,6 +176,18 @@ def get_all():
     except Exception as e:
         logging.exception("Failed to retrieve all data from MongoDB.")
         return jsonify({"error": "Could not fetch data"}), 500
+
+
+@app.route("/predict-task-time", methods=["POST"])
+def predict_task_time_api():
+    logging.info("POST /predict-task-time called")
+    try:
+        features = request.json
+        prediction = predict_task_time(features)
+        return jsonify({"estimated_time": prediction})
+    except Exception as e:
+        logging.exception("Task time prediction failed.")
+        return jsonify({"error": "Prediction failed."}), 500
 
 
 # --- Start MQTT Client ---
